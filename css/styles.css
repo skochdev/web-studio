@@ -1,0 +1,33 @@
+:root {
+  --accent-color: #2196f3;
+  --default-text-color: #212121;
+  --paragraph-color: #757575;
+  --white-color: #ffffff;
+  --transparent-text: rgba(255, 255, 255, 0.6);
+  --primary-bg-fill: #ffffff;
+  --secondary-bg-fill: #f5f4fa;
+  --footer-bg-color: #2f303a;
+}
+
+body {
+  color: var(--paragraph-color);
+}
+/* * SECTIONS DEFAULT COLORS */
+
+/*   SECTIONS DEFAULT */
+
+/* * HERO */
+
+/*   HERO*/
+
+/* * FEATURES --> */
+
+/*   FEATURES --> */
+
+/* * WHAT WE DO --> */
+
+/*   WHAT WE DO --> */
+
+/* * TEAM --> */
+
+/*   TEAM --> */
