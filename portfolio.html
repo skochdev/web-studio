@@ -11,41 +11,75 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
       <nav class="main-nav">
-        <a class="main-nav__logo" href="./index.html">
-          <span class="main-nav__logo--accent">Web</span>
-          Studio
+        <a class="logo-header" href="./index.html"
+          ><span class="logo-header__accent">Web</span>Studio
         </a>
         <ul class="main-nav__site-nav">
-          <li><a href="./index.html">Studio</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+          <li>
+            <a class="main-nav__site-nav__link" href="./index.html">Studio</a>
+          </li>
+          <li>
+            <a class="main-nav__site-nav__link current" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li><a class="main-nav__site-nav__link" href="">Contacts</a></li>
         </ul>
       </nav>
 
       <ul class="main-nav__contacts">
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li>
+          <a class="main-nav__contacts__link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="main-nav__contacts__link" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
       </ul>
     </header>
     <main>
       <section class="section">
         <h1>Portfolio</h1>
         <ul class="portfolio-filter">
-          <li><button type="button">All</button></li>
-          <li><button type="button">Websites</button></li>
-          <li><button type="button">Apps</button></li>
-          <li><button type="button">Design</button></li>
-          <li><button type="button">Marketing</button></li>
+          <li>
+            <button class="button button-filter active" type="button">
+              All
+            </button>
+          </li>
+          <li>
+            <button class="button button-filter" type="button">Websites</button>
+          </li>
+          <li>
+            <button class="button button-filter" type="button">Apps</button>
+          </li>
+          <li>
+            <button class="button button-filter" type="button">Design</button>
+          </li>
+          <li>
+            <button class="button button-filter" type="button">
+              Marketing
+            </button>
+          </li>
         </ul>
 
         <ul class="portfolio-cards">
-          <li class="card">
-            <a href="" title="website">
+          <li>
+            <a class="portfolio-item__card" href="" title="website">
               <div>
                 <img
                   src="./images/portfolio-images/portfolio-01.jpg"
@@ -54,13 +88,15 @@
                   height="294"
                   loading="lazy"
                 />
-                <h2>TechnoPiggy</h2>
-                <p>Website</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">TechnoPiggy</h2>
+                  <p class="portfolio-card__description">Website</p>
+                </div>
               </div>
             </a>
           </li>
-          <li class="card">
-            <a href="" title="design">
+          <li>
+            <a class="portfolio-item__card" href="" title="design">
               <div>
                 <img
                   src="./images/portfolio-images/portfolio-02.jpg"
@@ -69,13 +105,15 @@
                   height="294"
                   loading="lazy"
                 />
-                <h2>Poster Basketball</h2>
-                <p>Design</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Poster Basketball</h2>
+                  <p class="portfolio-card__description">Design</p>
+                </div>
               </div>
             </a>
           </li>
-          <li class="card">
-            <a href="" title="app">
+          <li>
+            <a class="portfolio-item__card" href="" title="app">
               <div>
                 <img
                   src="./images/portfolio-images/portfolio-03.jpg"
@@ -84,13 +122,15 @@
                   height="294"
                   loading="lazy"
                 />
-                <h2>Seafood Restaurant</h2>
-                <p>App</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Seafood Restaurant</h2>
+                  <p class="portfolio-card__description">App</p>
+                </div>
               </div>
             </a>
           </li>
-          <li class="card">
-            <a href="" title="marketing">
+          <li>
+            <a class="portfolio-item__card" href="" title="marketing">
               <div>
                 <img
                   src="./images/portfolio-images/portfolio-04.jpg"
@@ -99,13 +139,15 @@
                   height="294"
                   loading="lazy"
                 />
-                <h2>Prime Project</h2>
-                <p>Marketing</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Prime Project</h2>
+                  <p class="portfolio-card__description">Marketing</p>
+                </div>
               </div>
             </a>
           </li>
-          <li class="card">
-            <a href="" title="app">
+          <li>
+            <a class="portfolio-item__card" href="" title="app">
               <div>
                 <img
                   src="./images/portfolio-images/portfolio-05.jpg"
@@ -114,13 +156,15 @@
                   height="294"
                   loading="lazy"
                 />
-                <h2>Boxes Project</h2>
-                <p>App</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Boxes Project</h2>
+                  <p class="portfolio-card__description">App</p>
+                </div>
               </div>
             </a>
           </li>
-          <li class="card">
-            <a href="" title="website">
+          <li>
+            <a class="portfolio-item__card" href="" title="website">
               <div>
                 <img
                   src="./images/portfolio-images/portfolio-06.jpg"
@@ -129,13 +173,17 @@
                   height="294"
                   loading="lazy"
                 />
-                <h2>Inspiration has no Borders</h2>
-                <p>Website</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="portfolio-card__description">Website</p>
+                </div>
               </div>
             </a>
           </li>
-          <li class="card">
-            <a href="" title="design">
+          <li>
+            <a class="portfolio-item__card" href="" title="design">
               <div>
                 <img
                   src="./images/portfolio-images/portfolio-07.jpg"
@@ -144,13 +192,15 @@
                   height="294"
                   loading="lazy"
                 />
-                <h2>Limited Edition</h2>
-                <p>Design</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Limited Edition</h2>
+                  <p class="portfolio-card__description">Design</p>
+                </div>
               </div>
             </a>
           </li>
-          <li class="card">
-            <a href="" title="marketing">
+          <li>
+            <a class="portfolio-item__card" href="" title="marketing">
               <div>
                 <img
                   src="./images/portfolio-images/portfolio-08.jpg"
@@ -159,13 +209,15 @@
                   height="294"
                   loading="lazy"
                 />
-                <h2>LAB Project</h2>
-                <p>Marketing</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">LAB Project</h2>
+                  <p class="portfolio-card__description">Marketing</p>
+                </div>
               </div>
             </a>
           </li>
-          <li class="card">
-            <a href="" title="app">
+          <li>
+            <a class="portfolio-item__card" href="" title="app">
               <div>
                 <img
                   src="./images/portfolio-images/portfolio-09.jpg"
@@ -174,27 +226,32 @@
                   height="294"
                   loading="lazy"
                 />
-                <h2>Growing Business</h2>
-                <p>App</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Growing Business</h2>
+                  <p class="portfolio-card__description">App</p>
+                </div>
               </div>
             </a>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="./index.html">
-        Web
-        <span>Studio</span>
+    <footer class="footer">
+      <a class="logo-footer" href="./index.html">
+        <span class="logo-footer__accent">Web</span>Studio
       </a>
-      <address>
+      <address class="address">
         <p>Kyiv, Drushby Narodiv street, 25</p>
         <ul>
           <li>
-            <a href="mailto:info@example.com">info@example.com</a>
+            <a class="footer__contacts__link" href="mailto:info@example.com"
+              >info@example.com</a
+            >
           </li>
           <li>
-            <a href="tel:+380991111111">+38 099 111 11 11</a>
+            <a class="footer__contacts__link" href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
           </li>
         </ul>
       </address>
