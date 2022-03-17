@@ -7,11 +7,21 @@
   --primary-bg-fill: #ffffff;
   --secondary-bg-fill: #f5f4fa;
   --footer-bg-color: #2f303a;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
 }
 
 body {
+  letter-spacing: 0.03em;
+
   color: var(--paragraph-color);
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 }
+
 /* * SECTIONS DEFAULT COLORS */
 
 /*   SECTIONS DEFAULT */
