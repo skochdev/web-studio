@@ -156,6 +156,9 @@ summary {
   --fw-medium: 500;
   --fw-bold: 700;
   --fw-black: 900;
+
+  --page-container: 1230px;
+  --section-padding: 94px;
 }
 
 body {
@@ -178,7 +181,7 @@ a {
 }
 
 .page-container {
-  width: 1230px;
+  width: var(--page-container);
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -188,12 +191,12 @@ a {
 
 .features-section,
 .team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 
 .doings-section {
-  padding-bottom: 94px;
+  padding-bottom: var(--section-padding);
 }
 .button {
   background-color: var(--accent-color);
