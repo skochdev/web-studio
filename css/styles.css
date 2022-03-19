@@ -1,3 +1,146 @@
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+hr {
+  height: 0;
+  color: inherit;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
+    monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type='button'],
+[type='reset'],
+[type='submit'],
+button {
+  -webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+/* /MODERN NORMALIZE */
+
 :root {
   --accent-color: #2196f3;
   --default-text-color: #212121;
@@ -17,6 +160,7 @@
 
 body {
   letter-spacing: 0.03em;
+  background-color: var(--white-color);
 
   color: var(--paragraph-color);
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir,
@@ -33,7 +177,24 @@ a {
   text-decoration: none;
 }
 
+.page-container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /* * SECTIONS DEFAULT */
+
+.features-section,
+.team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.doings-section {
+  padding-bottom: 94px;
+}
 .button {
   background-color: var(--accent-color);
   border: none;
@@ -47,6 +208,8 @@ a {
 }
 
 .common-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--default-text-color);
   font-weight: var(--fw-bold);
   font-size: 14px;
@@ -55,6 +218,8 @@ a {
 }
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--default-text-color);
   font-weight: var(--fw-bold);
   font-size: 36px;
@@ -63,6 +228,8 @@ a {
 }
 
 .common-paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: var(--fw-regular);
   font-size: 14px;
   line-height: 1.71;
@@ -77,11 +244,18 @@ a {
   background-color: var(--white-color);
 }
 
+.team-card__img {
+  display: block;
+}
+
 .team-card__info {
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-card__name {
+  margin: 0;
   color: var(--default-text-color);
   font-weight: var(--fw-medium);
   font-size: 16px;
@@ -142,11 +316,21 @@ a {
 /*   HEADER */
 
 /* * HERO */
+.hero-content {
+  margin: 0 auto;
+  background-color: teal;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+}
 
 .hero-section {
   background-color: var(--underlay-bg-color);
+  text-align: center;
 }
 .hero-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--white-color);
   font-family: 'Roboto';
   font-weight: var(--fw-black);
@@ -155,6 +339,13 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.hero-button {
+  display: inline-block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 200px;
 }
 
 .hero-button:hover,
@@ -168,6 +359,10 @@ a {
 /*   FEATURES --> */
 
 /* * WHAT WE DO --> */
+
+.doings-img {
+  display: block;
+}
 
 /*   WHAT WE DO --> */
 
@@ -205,20 +400,30 @@ a {
 }
 
 .button-filter.active {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
   color: var(--white-color);
   background-color: var(--accent-color);
 }
 
-.portfolio-item__card {
+.portfolio-item {
   width: 370px;
-  text-align: center;
+}
+
+.portfolio-card_img {
+  display: block;
 }
 
 .portfolio-card__info {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
   color: var(--default-text-color);
 }
 
 .portfolio-card__title {
+  margin: 0;
   font-weight: var(--fw-bold);
   font-size: 18px;
   line-height: 2;
@@ -226,7 +431,9 @@ a {
 }
 
 .portfolio-card__description {
+  margin: 0;
   color: var(--paragraph-color);
   font-size: 16px;
   line-height: 1.88;
+  text-align: center;
 }

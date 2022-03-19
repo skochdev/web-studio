@@ -8,204 +8,235 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="main-nav">
-        <a class="logo-header" href="./index.html"
-          ><span class="logo-header__accent">Web</span>Studio
-        </a>
-        <ul class="main-nav__site-nav">
-          <li>
-            <a class="main-nav__site-nav__link current" href="./index.html"
-              >Studio</a
-            >
-          </li>
-          <li>
-            <a class="main-nav__site-nav__link" href="./portfolio.html"
-              >Portfolio</a
-            >
-          </li>
-          <li><a class="main-nav__site-nav__link" href="">Contacts</a></li>
-        </ul>
-      </nav>
+      <div class="page-container">
+        <nav class="main-nav">
+          <a class="logo-header" href="./index.html"
+            ><span class="logo-header__accent">Web</span>Studio
+          </a>
+          <ul class="main-nav__site-nav">
+            <li>
+              <a class="main-nav__site-nav__link current" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="main-nav__site-nav__link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="main-nav__site-nav__link" href="./contacts.html"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-      <ul class="main-nav__contacts">
-        <li>
-          <a class="main-nav__contacts__link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="main-nav__contacts__link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+        <ul class="main-nav__contacts">
+          <li>
+            <a class="main-nav__contacts__link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="main-nav__contacts__link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
+
     <main>
       <!-- * HERO -->
       <section class="section hero-section">
-        <h1 class="hero-heading">
-          Effective Solutions<br />
-          For Your Business
-        </h1>
-        <button class="button hero-button" type="button">Make an Order</button>
+        <div class="hero-content">
+          <div class="page-container">
+            <h1 class="hero-heading">
+              Effective Solutions<br />
+              For Your Business
+            </h1>
+            <button class="button hero-button" type="button">
+              Make an Order
+            </button>
+          </div>
+        </div>
       </section>
       <!--  HERO -->
 
       <!-- * FEATURES -->
-      <section class="section">
-        <h2 class="section-title">Features</h2>
-        <ul>
-          <li>
-            <h3 class="common-heading">Attention to details</h3>
-            <p class="common-paragraph">
-              Ideological markets, as well as the beginning of daily work on the
-              formation of a position.
-            </p>
-          </li>
-          <li>
-            <h3 class="common-heading">Punctuality</h3>
-            <p class="common-paragraph">
-              The task of the organization, in particular the framework and
-              place of training of personnel entails.
-            </p>
-          </li>
-          <li>
-            <h3 class="common-heading">Planning</h3>
-            <p class="common-paragraph">
-              Similarly, consultation with a broad asset is largely conditional.
-            </p>
-          </li>
-          <li>
-            <h3 class="common-heading">Modern technologies</h3>
-            <p class="common-paragraph">
-              The significance of these problems is so obvious that the
-              implementation of planned targets.
-            </p>
-          </li>
-        </ul>
+      <section class="section features-section">
+        <div class="page-container">
+          <!-- <h2 class="section-title">Features</h2> -->
+          <ul>
+            <li>
+              <h3 class="common-heading">Attention to details</h3>
+              <p class="common-paragraph">
+                Ideological markets, as well as the beginning of daily work on
+                the formation of a position.
+              </p>
+            </li>
+            <li>
+              <h3 class="common-heading">Punctuality</h3>
+              <p class="common-paragraph">
+                The task of the organization, in particular the framework and
+                place of training of personnel entails.
+              </p>
+            </li>
+            <li>
+              <h3 class="common-heading">Planning</h3>
+              <p class="common-paragraph">
+                Similarly, consultation with a broad asset is largely
+                conditional.
+              </p>
+            </li>
+            <li>
+              <h3 class="common-heading">Modern technologies</h3>
+              <p class="common-paragraph">
+                The significance of these problems is so obvious that the
+                implementation of planned targets.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--  FEATURES -->
 
       <!-- * WHAT WE DO -->
-      <section class="section">
-        <h2 class="section-title">What we do</h2>
-        <ul>
-          <li>
-            <img
-              width="370"
-              src="./images/imgwhat-we-do-01.jpg"
-              alt="Project Management"
-              loading="lazy"
-            />
-          </li>
-          <li>
-            <img
-              width="370"
-              src="./images/imgwhat-we-do-02.jpg"
-              alt="Web Development"
-              loading="lazy"
-            />
-          </li>
-          <li>
-            <img
-              width="370"
-              src="./images/imgwhat-we-do-03.jpg"
-              alt="Design"
-              loading="lazy"
-            />
-          </li>
-        </ul>
+      <section class="section doings-section">
+        <div class="page-container">
+          <!-- <h2 class="section-title">What we do</h2> -->
+          <ul>
+            <li>
+              <img
+                class="doings-img"
+                width="370"
+                src="./images/imgwhat-we-do-01.jpg"
+                alt="Project Management"
+                loading="lazy"
+              />
+            </li>
+            <li>
+              <img
+                class="doings-img"
+                width="370"
+                src="./images/imgwhat-we-do-02.jpg"
+                alt="Web Development"
+                loading="lazy"
+              />
+            </li>
+            <li>
+              <img
+                class="doings-img"
+                width="370"
+                src="./images/imgwhat-we-do-03.jpg"
+                alt="Design"
+                loading="lazy"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!--  WHAT WE DO -->
 
       <!-- * TEAM -->
       <section class="section team-section">
-        <h2 class="section-title">Our Team</h2>
-        <ul>
-          <li class="team-card">
-            <img
-              width="270"
-              src="./images/team-photos/img-1.jpg"
-              alt="Angela Steevens"
-              loading="lazy"
-            />
-            <div class="team-card__info">
-              <h3 class="team-card__name">Angela Steevens</h3>
-              <p class="common-paragraph">Project Manager</p>
-            </div>
-          </li>
-          <li class="team-card">
-            <img
-              width="270"
-              src="./images/team-photos/img-2.jpg"
-              alt="Robert Tompson"
-              loading="lazy"
-            />
-            <div class="team-card__info">
-              <h3 class="team-card__name">Robert Tompson</h3>
-              <p class="common-paragraph">Designer</p>
-            </div>
-          </li>
-          <li class="team-card">
-            <img
-              width="270"
-              src="./images/team-photos/img-3.jpg"
-              alt="Jake Farley"
-              loading="lazy"
-            />
-            <div class="team-card__info">
-              <h3 class="team-card__name">Jake Farley</h3>
-              <p class="common-paragraph">Frontend Developer</p>
-            </div>
-          </li>
-          <li class="team-card">
-            <img
-              width="270"
-              src="./images/team-photos/img-4.jpg"
-              alt="John Jonson"
-              loading="lazy"
-            />
-            <div class="team-card__info">
-              <h3 class="team-card__name">John Jonson</h3>
-              <p class="common-paragraph">Backend Developer</p>
-            </div>
-          </li>
-        </ul>
+        <div class="page-container">
+          <h2 class="section-title">Our Team</h2>
+          <ul>
+            <li class="team-card">
+              <img
+                class="team-card__img"
+                width="270"
+                src="./images/team-photos/img-1.jpg"
+                alt="Angela Steevens"
+                loading="lazy"
+              />
+              <div class="team-card__info">
+                <h3 class="team-card__name">Angela Steevens</h3>
+                <p class="common-paragraph common-paragraph__team-card">
+                  Project Manager
+                </p>
+              </div>
+            </li>
+            <li class="team-card">
+              <img
+                class="team-card__img"
+                width="270"
+                src="./images/team-photos/img-2.jpg"
+                alt="Robert Tompson"
+                loading="lazy"
+              />
+              <div class="team-card__info">
+                <h3 class="team-card__name">Robert Tompson</h3>
+                <p class="common-paragraph common-paragraph__team-card">
+                  Designer
+                </p>
+              </div>
+            </li>
+            <li class="team-card">
+              <img
+                class="team-card__img"
+                width="270"
+                src="./images/team-photos/img-3.jpg"
+                alt="Jake Farley"
+                loading="lazy"
+              />
+              <div class="team-card__info">
+                <h3 class="team-card__name">Jake Farley</h3>
+                <p class="common-paragraph common-paragraph__team-card">
+                  Frontend Developer
+                </p>
+              </div>
+            </li>
+            <li class="team-card">
+              <img
+                class="team-card__img"
+                width="270"
+                src="./images/team-photos/img-4.jpg"
+                alt="John Jonson"
+                loading="lazy"
+              />
+              <div class="team-card__info">
+                <h3 class="team-card__name">John Jonson</h3>
+                <p class="common-paragraph common-paragraph__team-card">
+                  Backend Developer
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--  TEAM -->
       <footer class="footer">
-        <a class="logo-footer" href="./index.html">
-          <span class="logo-footer__accent">Web</span>Studio
-        </a>
-        <address class="address">
-          <p>Kyiv, Drushby Narodiv street, 25</p>
-          <ul>
-            <li>
-              <a class="footer__contacts__link" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
-            <li>
-              <a class="footer__contacts__link" href="tel:+380991111111"
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="page-container">
+          <a class="logo-footer" href="./index.html">
+            <span class="logo-footer__accent">Web</span>Studio
+          </a>
+          <address class="address">
+            <p>Kyiv, Drushby Narodiv street, 25</p>
+            <ul>
+              <li>
+                <a class="footer__contacts__link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a class="footer__contacts__link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </footer>
     </main>
   </body>
