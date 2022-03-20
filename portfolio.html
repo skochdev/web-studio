@@ -16,23 +16,23 @@
   </head>
   <body>
     <header class="header">
-      <div class="page-container">
+      <div class="page-container header-wrapper">
         <nav class="main-nav">
           <a class="logo-header" href="./index.html"
             ><span class="logo-header__accent">Web</span>Studio
           </a>
           <ul class="main-nav__site-nav">
-            <li>
+            <li class="main-nav__item">
               <a class="main-nav__site-nav__link" href="./index.html">Studio</a>
             </li>
-            <li>
+            <li class="main-nav__item">
               <a
                 class="main-nav__site-nav__link current"
                 href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
-            <li>
+            <li class="main-nav__item">
               <a class="main-nav__site-nav__link" href="./contacts.html"
                 >Contacts</a
               >
@@ -41,12 +41,12 @@
         </nav>
 
         <ul class="main-nav__contacts">
-          <li>
+          <li class="main-nav__contacts__item">
             <a class="main-nav__contacts__link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="main-nav__contacts__item">
             <a class="main-nav__contacts__link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
@@ -55,27 +55,31 @@
       </div>
     </header>
     <main>
-      <section class="section">
+      <section class="section portfolio-section">
         <div class="page-container">
           <!-- <h1>Portfolio</h1> -->
           <ul class="portfolio-filter">
-            <li>
+            <li class="portfolio-filter__item">
               <button class="button button-filter active" type="button">
                 All
               </button>
             </li>
-            <li>
+
+            <li class="portfolio-filter__item">
               <button class="button button-filter" type="button">
                 Websites
               </button>
             </li>
-            <li>
+
+            <li class="portfolio-filter__item">
               <button class="button button-filter" type="button">Apps</button>
             </li>
-            <li>
+
+            <li class="portfolio-filter__item">
               <button class="button button-filter" type="button">Design</button>
             </li>
-            <li>
+
+            <li class="portfolio-filter__item">
               <button class="button button-filter" type="button">
                 Marketing
               </button>
@@ -85,157 +89,155 @@
           <ul class="portfolio-cards">
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="website">
-                <div>
-                  <img
-                    class="portfolio-card_img"
-                    src="./images/portfolio-images/portfolio-01.jpg"
-                    alt="Laptop with a website on the screen"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
-                  <div class="portfolio-card__info">
-                    <h2 class="portfolio-card__title">TechnoPiggy</h2>
-                    <p class="portfolio-card__description">Website</p>
-                  </div>
+                <img
+                  class="portfolio-card_img"
+                  src="./images/portfolio-images/portfolio-01.jpg"
+                  alt="Laptop with a website on the screen"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">TechnoPiggy</h2>
+                  <p class="portfolio-card__description">Website</p>
                 </div>
               </a>
             </li>
+
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="design">
-                <div>
-                  <img
-                    src="./images/portfolio-images/portfolio-02.jpg"
-                    alt="Two basketball players ingame"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
-                  <div class="portfolio-card__info">
-                    <h2 class="portfolio-card__title">Poster Basketball</h2>
-                    <p class="portfolio-card__description">Design</p>
-                  </div>
+                <img
+                  class="portfolio-card_img"
+                  src="./images/portfolio-images/portfolio-02.jpg"
+                  alt="Two basketball players ingame"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Poster Basketball</h2>
+                  <p class="portfolio-card__description">Design</p>
                 </div>
               </a>
             </li>
+
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="app">
-                <div>
-                  <img
-                    src="./images/portfolio-images/portfolio-03.jpg"
-                    alt="Logotype with a fish and lettering"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
-                  <div class="portfolio-card__info">
-                    <h2 class="portfolio-card__title">Seafood Restaurant</h2>
-                    <p class="portfolio-card__description">App</p>
-                  </div>
+                <img
+                  class="portfolio-card_img"
+                  src="./images/portfolio-images/portfolio-03.jpg"
+                  alt="Logotype with a fish and lettering"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Seafood Restaurant</h2>
+                  <p class="portfolio-card__description">App</p>
                 </div>
               </a>
             </li>
+
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="marketing">
-                <div>
-                  <img
-                    src="./images/portfolio-images/portfolio-04.jpg"
-                    alt="Headphones on white background"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
-                  <div class="portfolio-card__info">
-                    <h2 class="portfolio-card__title">Prime Project</h2>
-                    <p class="portfolio-card__description">Marketing</p>
-                  </div>
+                <img
+                  class="portfolio-card_img"
+                  src="./images/portfolio-images/portfolio-04.jpg"
+                  alt="Headphones on white background"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Prime Project</h2>
+                  <p class="portfolio-card__description">Marketing</p>
                 </div>
               </a>
             </li>
+
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="app">
-                <div>
-                  <img
-                    src="./images/portfolio-images/portfolio-05.jpg"
-                    alt="Packaging with branded design"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
-                  <div class="portfolio-card__info">
-                    <h2 class="portfolio-card__title">Boxes Project</h2>
-                    <p class="portfolio-card__description">App</p>
-                  </div>
+                <img
+                  class="portfolio-card_img"
+                  src="./images/portfolio-images/portfolio-05.jpg"
+                  alt="Packaging with branded design"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Boxes Project</h2>
+                  <p class="portfolio-card__description">App</p>
                 </div>
               </a>
             </li>
+
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="website">
-                <div>
-                  <img
-                    src="./images/portfolio-images/portfolio-06.jpg"
-                    alt="Desktop monitor with an open website"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
-                  <div class="portfolio-card__info">
-                    <h2 class="portfolio-card__title">
-                      Inspiration has no Borders
-                    </h2>
-                    <p class="portfolio-card__description">Website</p>
-                  </div>
+                <img
+                  class="portfolio-card_img"
+                  src="./images/portfolio-images/portfolio-06.jpg"
+                  alt="Desktop monitor with an open website"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="portfolio-card__description">Website</p>
                 </div>
               </a>
             </li>
+
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="design">
-                <div>
-                  <img
-                    src="./images/portfolio-images/portfolio-07.jpg"
-                    alt="Printed magazine"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
-                  <div class="portfolio-card__info">
-                    <h2 class="portfolio-card__title">Limited Edition</h2>
-                    <p class="portfolio-card__description">Design</p>
-                  </div>
+                <img
+                  class="portfolio-card_img"
+                  src="./images/portfolio-images/portfolio-07.jpg"
+                  alt="Printed magazine"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Limited Edition</h2>
+                  <p class="portfolio-card__description">Design</p>
                 </div>
               </a>
             </li>
+
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="marketing">
-                <div>
-                  <img
-                    src="./images/portfolio-images/portfolio-08.jpg"
-                    alt="Cloth tag with the brand name"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
-                  <div class="portfolio-card__info">
-                    <h2 class="portfolio-card__title">LAB Project</h2>
-                    <p class="portfolio-card__description">Marketing</p>
-                  </div>
+                <img
+                  class="portfolio-card_img"
+                  src="./images/portfolio-images/portfolio-08.jpg"
+                  alt="Cloth tag with the brand name"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">LAB Project</h2>
+                  <p class="portfolio-card__description">Marketing</p>
                 </div>
               </a>
             </li>
+
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="app">
-                <div>
-                  <img
-                    src="./images/portfolio-images/portfolio-09.jpg"
-                    alt="Laptop with an open website page"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
-                  <div class="portfolio-card__info">
-                    <h2 class="portfolio-card__title">Growing Business</h2>
-                    <p class="portfolio-card__description">App</p>
-                  </div>
+                <img
+                  class="portfolio-card_img"
+                  src="./images/portfolio-images/portfolio-09.jpg"
+                  alt="Laptop with an open website page"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Growing Business</h2>
+                  <p class="portfolio-card__description">App</p>
                 </div>
               </a>
             </li>
