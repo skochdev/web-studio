@@ -243,36 +243,6 @@ a {
   line-height: 1.71;
 }
 
-.team-section {
-  background-color: var(--secondary-bg-fill);
-}
-
-.team-card {
-  width: 270px;
-
-  background-color: var(--white-color);
-}
-
-.team-card__img {
-  display: block;
-}
-
-.team-card__info {
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  text-align: center;
-}
-
-.team-card__name {
-  margin: 0;
-
-  color: var(--default-text-color);
-  font-weight: var(--fw-medium);
-  font-size: 16px;
-  line-height: 1.18;
-}
-
 /*   SECTIONS DEFAULT */
 
 /* * HEADER */
@@ -321,7 +291,7 @@ a {
   margin-left: 50px;
 }
 
-.main-nav__site-nav__link,
+.site-nav__link,
 .main-nav__contacts__link,
 .footer__contacts__link {
   display: block;
@@ -333,23 +303,23 @@ a {
   letter-spacing: 0.02em;
 }
 
-.main-nav__site-nav {
+.site-nav {
   display: flex;
 }
 
-.main-nav__item + .main-nav__item {
+.site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
 
-.main-nav__site-nav__link {
+.site-nav__link {
   padding: 32px 0;
 }
 
-.main-nav__site-nav__link.current {
+.site-nav__link.current {
   color: var(--accent-color);
 }
 
-.main-nav__site-nav__link:hover,
+.site-nav__link:hover,
 :focus,
 .main-nav__contacts__link:hover,
 :focus {
@@ -374,7 +344,20 @@ a {
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  height: 600px;
   max-width: 1600px;
+
+  /* background-image: url(../images/Imghero.jpg); */
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.6),
+      rgba(47, 48, 58, 0.2)
+    ),
+    url(../images/Imghero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   background-color: var(--underlay-bg-color);
 }
@@ -445,10 +428,54 @@ a {
 
 /* * TEAM --> */
 
+.team-section {
+  background-color: var(--secondary-bg-fill);
+}
+
+.team-list {
+  display: flex;
+  margin: -15px;
+}
+
+.team-card {
+  width: 270px;
+  margin: 15px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: var(--white-color);
+}
+
+.team-card__img {
+  display: block;
+}
+
+.team-card__info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-align: center;
+}
+
+.team-card__name {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: var(--default-text-color);
+  font-weight: var(--fw-medium);
+  font-size: 16px;
+  line-height: 1.18;
+}
+
 /*   TEAM --> */
 
 /* * FOOTER */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--underlay-bg-color);
 }
 
@@ -460,16 +487,30 @@ a {
   line-height: 1.71;
 }
 
+.logo-footer {
+  margin-bottom: 20px;
+  display: block;
+}
+
 .address__street {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-.footer__contacts__link {
+.footer-contacts__item + .footer-contacts__item {
+  margin-top: 10px;
+}
+
+.footer-contacts__link {
   color: rgba(255, 255, 255, 0.6);
   font-weight: var(--fw-regular);
   font-size: 14px;
   line-height: 1.71;
+}
+
+.made-by {
+  font-size: 12px;
+  text-align: center;
 }
 /*   FOOTER */
 
@@ -499,17 +540,33 @@ a {
 .portfolio-item {
   margin: 15px;
   width: 370px;
+
+  overflow: hidden;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.12), 0px 8px 8px rgba(0, 0, 0, 0.14),
+    0px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-card_img {
   display: block;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .portfolio-card__info {
   padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
   padding-bottom: 20px;
 
-  text-align: center;
+  text-align: start;
   color: var(--default-text-color);
 }
 
@@ -528,7 +585,6 @@ a {
   color: var(--paragraph-color);
   font-size: 16px;
   line-height: 1.88;
-  text-align: center;
 }
 
 .portfolio-filter {
@@ -539,4 +595,47 @@ a {
 
 .portfolio-filter__item + .portfolio-filter__item {
   margin-left: 8px;
+}
+
+.button-test {
+  padding: 10px 30px;
+  color: white;
+  background-color: teal;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.button-test::before {
+  content: '';
+  background-image: url('../images/team-photos/img-2.jpg');
+  background-color: red;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.test-list {
+  display: flex;
+}
+
+.test-item {
+  width: 270px;
+  padding: 25px 40px;
+}
+
+.test-item + .test-item {
+  margin-left: 50px;
+}
+
+.test-item::before {
+  content: '';
+  display: block;
+  height: 150px;
+  background-image: url('../images/icons/astronaut\ 1icon.png');
+  background-size: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(240, 229, 229);
 }
