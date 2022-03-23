@@ -591,14 +591,16 @@ a {
   height: 60px;
 }
 
-.clients-list__item:hover,
-.clients-list__item:hover .clients-list__icon {
+.clients-list__link:hover .clients-list__icon,
+.clients-list__link:hover {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.clients-list__link:focus .clients-list__icon {
+.clients-list__link:focus .clients-list__icon,
+.clients-list__link:focus {
   fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* * FOOTER */
