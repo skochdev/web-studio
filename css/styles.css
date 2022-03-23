@@ -517,7 +517,6 @@ a {
 }
 
 .socials__link {
-  display: inline-block;
   display: flex;
   align-items: center;
   justify-content: center;
