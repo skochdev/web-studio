@@ -37,14 +37,28 @@
         </nav>
 
         <ul class="main-nav__contacts">
-          <li class="main-nav__contacts__item">
-            <a class="main-nav__contacts__link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+          <li class="main-nav__contacts-item">
+            <a class="main-nav__contacts-link" href="mailto:info@devstudio.com">
+              <svg
+                class="contacts-icon contacts-icon__envelope"
+                width="16"
+                height="12"
+              >
+                <use href="./images/icons/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
-          <li class="main-nav__contacts__item">
-            <a class="main-nav__contacts__link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+          <li class="main-nav__contacts-item">
+            <a class="main-nav__contacts-link" href="tel:+380961111111">
+              <svg
+                class="contacts-icon contacts-icon__smartphone"
+                width="10"
+                height="16"
+              >
+                <use href="./images/icons/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -243,26 +257,58 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="page-container">
-        <a class="logo-footer" href="./index.html">
-          <span class="logo-footer__accent">Web</span>Studio
-        </a>
-        <address class="address">
-          <p class="address__street">Kyiv, Drushby Narodiv street, 25</p>
-          <ul class="footer-contacts">
-            <li class="footer-contacts__item">
-              <a class="footer-contacts__link" href="mailto:info@example.com"
-                >info@example.com</a
-              >
+      <div class="page-container footer-wrapper">
+        <div class="footer-address">
+          <a class="logo-footer" href="./index.html">
+            <span class="logo-footer__accent">Web</span>Studio
+          </a>
+          <address class="address">
+            <p class="address__street">Kyiv, Drushby Narodiv street, 25</p>
+            <ul class="footer-contacts">
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__follow">
+          <strong class="footer__follow-title">Follow Us</strong>
+          <ul class="socials footer-socials">
+            <li class="socials__item footer-socials__item">
+              <svg class="socials__icon footer-socials__icon">
+                <use href="./images/icons/icons.svg#icon-instagram"></use>
+              </svg>
             </li>
-            <li class="footer-contacts__item">
-              <a class="footer-contacts__link" href="tel:+380991111111"
-                >+38 099 111 11 11</a
-              >
+
+            <li class="socials__item footer-socials__item">
+              <svg class="socials__icon footer-socials__icon">
+                <use href="./images/icons/icons.svg#icon-twitter"></use>
+              </svg>
+            </li>
+
+            <li class="socials__item footer-socials__item">
+              <svg class="socials__icon footer-socials__icon">
+                <use href="./images/icons/icons.svg#icon-facebook"></use>
+              </svg>
+            </li>
+
+            <li class="socials__item footer-socials__item">
+              <svg class="socials__icon footer-socials__icon">
+                <use href="./images/icons/icons.svg#icon-linkedin"></use>
+              </svg>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
+
       <p class="made-by">Bohdan Skochii, GoIT Full Stack Course</p>
     </footer>
   </body>

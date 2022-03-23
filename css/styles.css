@@ -151,6 +151,7 @@ summary {
   --secondary-bg-fill: #f5f4fa;
   --underlay-bg-color: #2f303a;
   --hero-btn-hover: #188ce8;
+  --icons-default-color: #afb1b8;
 
   --fw-regular: 400;
   --fw-medium: 500;
@@ -283,17 +284,29 @@ a {
   color: var(--white-color);
 }
 
-.main-nav__contacts__item {
+.main-nav__contacts-item {
   display: flex;
 }
 
-.main-nav__contacts__item + .main-nav__contacts__item {
+.main-nav__contacts-item + .main-nav__contacts-item {
   margin-left: 50px;
 }
 
+.contacts-icon {
+  fill: var(--paragraph-color);
+  margin-right: 10px;
+}
+
+.main-nav__contacts-link:hover .contacts-icon__envelope,
+.main-nav__contacts-link:hover .contacts-icon__smartphone,
+.main-nav__contacts-link:focus .contacts-icon__envelope,
+.main-nav__contacts-link:focus .contacts-icon__smartphone {
+  fill: var(--accent-color);
+}
+
 .site-nav__link,
-.main-nav__contacts__link,
-.footer__contacts__link {
+.main-nav__contacts-link,
+.footer__contacts-link {
   display: block;
   font-family: 'Roboto';
   color: var(--default-text-color);
@@ -320,9 +333,9 @@ a {
 }
 
 .site-nav__link:hover,
-:focus,
-.main-nav__contacts__link:hover,
-:focus {
+.site-nav__link:focus,
+.main-nav__contacts-link:hover,
+.main-nav__contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -331,7 +344,9 @@ a {
   margin-left: auto;
 }
 
-.main-nav__contacts__link {
+.main-nav__contacts-link {
+  display: flex;
+  align-items: center;
   padding: 32px 0;
 
   color: var(--paragraph-color);
@@ -340,14 +355,12 @@ a {
 /*   HEADER */
 
 /* * HERO */
-.hero-content {
+.hero-container {
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  height: 600px;
+  max-height: 600px;
   max-width: 1600px;
-
-  /* background-image: url(../images/Imghero.jpg); */
 
   background-image: linear-gradient(
       to bottom,
@@ -374,14 +387,14 @@ a {
   font-weight: var(--fw-black);
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero-button {
-  display: inline-block;
+  display: block;
   min-width: 200px;
+  margin: 0 auto;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -401,6 +414,22 @@ a {
 
 .features-list__item {
   width: 270px;
+}
+
+.features-list__decoration {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-color: var(--secondary-bg-fill);
+}
+
+.features-list__icon {
+  width: 70px;
+  height: 70px;
 }
 
 .features-list__item + .features-list__item {
@@ -470,13 +499,139 @@ a {
   line-height: 1.18;
 }
 
+.common-paragraph__team-card {
+  margin-bottom: 16px;
+  font-weight: var(--fw-regular);
+  font-size: 16px;
+  line-height: calc(16 / 19);
+  color: var(--paragraph-color);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item {
+  border-radius: 50%;
+}
+
+.socials__link {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.team__socials-link:hover {
+  background-color: var(--accent-color);
+}
+
+.team__socials-link:focus {
+  background-color: var(--accent-color);
+}
+
+.team__socials-link:focus .team-socials__icon {
+  fill: var(--white-color);
+}
+
+.socials__item:hover .team-socials__icon,
+.socials__item:focus .team-socials__icon {
+  fill: var(--white-color);
+}
+
+.socials__item + .socials__item {
+  margin-left: 10px;
+}
+
+.socials__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.team-socials__icon {
+  fill: var(--icons-default-color);
+}
+
 /*   TEAM --> */
+
+/* * CLIENTS */
+
+.clients-section {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  color: var(--icons-default-color);
+}
+
+.clients-list__link {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icons-default-color);
+  border-radius: 4px;
+}
+
+.clients-list__item + .clients-list__item {
+  margin-left: 30px;
+}
+
+.clients-list__icon {
+  fill: currentColor;
+  width: 106px;
+  height: 60px;
+}
+
+.clients-list__item:hover,
+.clients-list__item:hover .clients-list__icon {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.clients-list__link:focus .clients-list__icon {
+  fill: var(--accent-color);
+}
 
 /* * FOOTER */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--underlay-bg-color);
+}
+
+.footer-address {
+  width: 231px;
+}
+.footer-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__follow {
+  margin-left: 70px;
+}
+
+.footer__follow-title {
+  color: var(--white-color);
+  font-family: 'Roboto';
+  font-weight: var(--fw-bold);
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}
+
+.footer-socials {
+  margin-top: 20px;
 }
 
 .address {
@@ -511,7 +666,22 @@ a {
 .made-by {
   font-size: 12px;
   text-align: center;
+  margin: 0;
 }
+
+.footer-socials__item {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-socials__icon {
+  fill: var(--white-color);
+}
+
+.footer__socials-link:hover,
+.footer__socials-link:focus {
+  background-color: var(--accent-color);
+}
+
 /*   FOOTER */
 
 /* * PORTFOLIO PAGE */
@@ -595,47 +765,4 @@ a {
 
 .portfolio-filter__item + .portfolio-filter__item {
   margin-left: 8px;
-}
-
-.button-test {
-  padding: 10px 30px;
-  color: white;
-  background-color: teal;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-}
-
-.button-test::before {
-  content: '';
-  background-image: url('../images/team-photos/img-2.jpg');
-  background-color: red;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-
-.test-list {
-  display: flex;
-}
-
-.test-item {
-  width: 270px;
-  padding: 25px 40px;
-}
-
-.test-item + .test-item {
-  margin-left: 50px;
-}
-
-.test-item::before {
-  content: '';
-  display: block;
-  height: 150px;
-  background-image: url('../images/icons/astronaut\ 1icon.png');
-  background-size: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgb(240, 229, 229);
 }
