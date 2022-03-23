@@ -734,6 +734,8 @@ a {
 .portfolio-item__card {
   display: block;
   overflow: hidden;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .portfolio-item__card:hover,
@@ -744,9 +746,6 @@ a {
 
 .portfolio-card_img {
   display: block;
-
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
 }
 
 .portfolio-card__info {
