@@ -262,6 +262,10 @@ a {
 
 /* * HEADER */
 
+.header {
+  border-bottom: 1px #ececec solid;
+}
+
 .header-wrapper {
   display: flex;
 }
