@@ -76,7 +76,7 @@
               Effective Solutions<br />
               For Your Business
             </h1>
-            <button class="button hero-button" type="button">
+            <button class="button hero-button" data-hero-button type="button">
               Make an Order
             </button>
           </div>
@@ -614,12 +614,15 @@
         <p class="made-by">Bohdan Skochii, GoIT Full Stack Course</p>
       </footer>
     </main>
-    <script>
-      const { height: pageHeaderHeight } = document
-        .querySelector('.header')
-        .getBoundingClientRect();
-      console.log(pageHeaderHeight);
-      console.log(document.querySelector('.header').getBoundingClientRect());
-    </script>
+
+    <div class="modal__backdrop is-hidden" data-modal-backdrop>
+      <div class="modal">
+        <button class="modal__close-btn" data-modal-close type="button">
+          Close
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/menu-modal.js" type="module"></script>
   </body>
 </html>
