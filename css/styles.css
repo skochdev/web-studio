@@ -349,11 +349,24 @@ a {
 }
 
 .site-nav__link {
+  position: relative;
   padding: 32px 0;
 }
 
 .site-nav__link.current {
   color: var(--accent-color);
+}
+
+.site-nav__link.current::after {
+  position: absolute;
+  border-radius: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent-color);
 }
 
 .site-nav__link:hover,
