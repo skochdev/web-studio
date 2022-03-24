@@ -263,7 +263,12 @@ a {
 /* * HEADER */
 
 .header {
-  border-bottom: 1px #ececec solid;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  background-color: var(--white-color);
+  z-index: 1;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
 .header-wrapper {
@@ -373,6 +378,11 @@ a {
 /*   HEADER */
 
 /* * HERO */
+
+.hero-section {
+  padding-top: 80px;
+}
+
 .hero-container {
   margin: 0 auto;
   padding-top: 200px;
@@ -463,12 +473,30 @@ a {
   justify-content: space-between;
 }
 
+.doings-list__item {
+  display: block;
+  position: relative;
+}
+
 .doings-list__item + .doings-list__item {
   margin-left: 30px;
 }
 
 .doings-img {
   display: block;
+}
+
+.common-heading__doings {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: var(--white-color);
+  margin: 0;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /*   WHAT WE DO --> */
@@ -704,6 +732,9 @@ a {
 /*   FOOTER */
 
 /* * PORTFOLIO PAGE */
+.portfolio-section {
+  padding-top: 174px;
+}
 
 .button-filter {
   padding: 6px 22px;
@@ -740,6 +771,16 @@ a {
   overflow: hidden;
 }
 
+.portfolio-item__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item__card:hover .portfolio-card__overlay-text,
+.portfolio-item__card:focus .portfolio-card__overlay-text {
+  bottom: 0;
+}
+
 .portfolio-item__card:hover,
 .portfolio-item__card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -750,13 +791,24 @@ a {
   display: block;
 }
 
+.portfolio-card__overlay-text {
+  position: absolute;
+  margin: 0;
+  height: 294px;
+  padding: 60px 24px;
+  bottom: -100%;
+  color: var(--white-color);
+  font-size: 18px;
+  line-height: 1.57;
+  background: rgba(33, 150, 243, 0.9);
+  transition: bottom 250ms;
+}
+
 .portfolio-card__info {
   padding-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
-
   padding-bottom: 20px;
-
   text-align: start;
   color: var(--default-text-color);
 }
@@ -787,3 +839,5 @@ a {
 .portfolio-filter__item + .portfolio-filter__item {
   margin-left: 8px;
 }
+
+/* * CONTACTS TEST PAGE */

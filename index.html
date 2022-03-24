@@ -161,6 +161,9 @@
                 alt="Project Management"
                 loading="lazy"
               />
+              <h3 class="common-heading common-heading__doings">
+                Desktop Software
+              </h3>
             </li>
 
             <li class="doings-list__item">
@@ -171,6 +174,9 @@
                 alt="Web Development"
                 loading="lazy"
               />
+              <h3 class="common-heading common-heading__doings">
+                Mobile Applications
+              </h3>
             </li>
 
             <li class="doings-list__item">
@@ -181,6 +187,7 @@
                 alt="Design"
                 loading="lazy"
               />
+              <h3 class="common-heading common-heading__doings">Design</h3>
             </li>
           </ul>
         </div>
@@ -607,5 +614,12 @@
         <p class="made-by">Bohdan Skochii, GoIT Full Stack Course</p>
       </footer>
     </main>
+    <script>
+      const { height: pageHeaderHeight } = document
+        .querySelector('.header')
+        .getBoundingClientRect();
+      console.log(pageHeaderHeight);
+      console.log(document.querySelector('.header').getBoundingClientRect());
+    </script>
   </body>
 </html>
