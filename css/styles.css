@@ -160,12 +160,23 @@ summary {
 
   --page-container: 1200px;
   --section-padding: 94px;
+
+  /* Transitions */
+  --transition-default-timing: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --color-transition: color 250ms var(--transition-default-timing);
+  --bgc-transition: background-color 250ms var(--transition-default-timing);
+  --fill-transition: fill 250ms var(--transition-default-timing);
+  --box-shadow-transition: box-shadow 250ms var(--transition-default-timing);
+  --transform-transition: transform 250ms var(--transition-default-timing);
+  --border-color-transition: border-color 250ms var(--transition-default-timing);
 }
 
 body {
   padding-top: 80px;
   letter-spacing: 0.03em;
   background-color: var(--white-color);
+  transition: var(--color-transition);
 
   color: var(--paragraph-color);
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir,
@@ -206,7 +217,6 @@ a {
 }
 
 .features-section,
-.team-section,
 .portfolio-section {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
@@ -226,6 +236,7 @@ a {
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+  transition: var(--bgc-transition);
 }
 
 .common-heading {
@@ -318,6 +329,7 @@ a {
 
 .contacts-icon {
   fill: var(--paragraph-color);
+  transition: var(--fill-transition);
   margin-right: 10px;
 }
 
@@ -338,6 +350,7 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: var(--color-transition);
 }
 
 .site-nav {
@@ -581,21 +594,9 @@ a {
   border-radius: 50%;
 }
 
-.team__socials-link:hover {
-  background-color: var(--accent-color);
-}
-
-.team__socials-link:focus {
-  background-color: var(--accent-color);
-}
-
-.team__socials-link:focus .team-socials__icon {
-  fill: var(--white-color);
-}
-
-.socials__item:hover .team-socials__icon,
-.socials__item:focus .team-socials__icon {
-  fill: var(--white-color);
+.team-socials__link {
+  background-color: var(--white-color);
+  transition: var(--bgc-transition);
 }
 
 .socials__item + .socials__item {
@@ -609,6 +610,22 @@ a {
 
 .team-socials__icon {
   fill: var(--icons-default-color);
+  transition: var(--fill-transition);
+}
+
+.team__socials-link {
+  background-color: var(--white-color);
+  transition: var(--bgc-transition);
+}
+
+.team__socials-link:hover,
+.team__socials-link:focus {
+  background-color: var(--accent-color);
+}
+
+.team__socials-link:hover .team-socials__icon,
+.team__socials-link:focus .team-socials__icon {
+  fill: var(--white-color);
 }
 
 /*   TEAM --> */
@@ -634,6 +651,7 @@ a {
   width: 170px;
   height: 92px;
   border: 1px solid var(--icons-default-color);
+  transition: var(--border-color-transition);
   border-radius: 4px;
 }
 
@@ -643,6 +661,7 @@ a {
 
 .clients-list__icon {
   fill: currentColor;
+  transition: var(--fill-transition);
   width: 106px;
   height: 60px;
 }
@@ -726,12 +745,13 @@ a {
   margin: 0;
 }
 
-.footer-socials__item {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 .footer-socials__icon {
   fill: var(--white-color);
+}
+
+.footer__socials-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: var(--bgc-transition);
 }
 
 .footer__socials-link:hover,
@@ -743,22 +763,28 @@ a {
 
 /* * PORTFOLIO PAGE */
 .portfolio-section {
-  padding-top: 174px;
+  padding-top: 94px;
 }
 
 .button-filter {
   padding: 6px 22px;
+  border-radius: 4px;
 
   color: var(--default-text-color);
   background-color: var(--secondary-bg-fill);
+  transition: var(--box-shadow-transition);
 }
 
 .button-filter.active {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: var(--white-color);
   background-color: var(--accent-color);
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-cards {
@@ -779,6 +805,7 @@ a {
 .portfolio-item__card {
   display: block;
   overflow: hidden;
+  transition: var(--box-shadow-transition);
 }
 
 .portfolio-item__thumb {
@@ -788,7 +815,7 @@ a {
 
 .portfolio-item__card:hover .portfolio-card__overlay-text,
 .portfolio-item__card:focus .portfolio-card__overlay-text {
-  bottom: 0;
+  transform: translateY(-100%);
 }
 
 .portfolio-item__card:hover,
@@ -803,7 +830,8 @@ a {
 
 .portfolio-card__overlay-text {
   position: absolute;
-  bottom: -100%;
+
+  transform: translateY(100%);
   margin: 0;
   height: 294px;
   padding: 60px 24px;
@@ -811,7 +839,7 @@ a {
   font-size: 18px;
   line-height: 1.57;
   background: rgba(33, 150, 243, 0.9);
-  transition: bottom 250ms;
+  transition: var(--transform-transition);
 }
 
 .portfolio-card__info {
@@ -851,6 +879,17 @@ a {
 }
 
 /* * CONTACTS TEST PAGE */
+
+.card-wrapper {
+  width: 200px;
+  height: 150px;
+  background-color: var(--icons-default-color);
+  transition: var(--bgc-transition);
+}
+
+.card-wrapper:hover {
+  background-color: var(--accent-color);
+}
 /*  CONTACTS TEST PAGE */
 
 /* * MODAL */
@@ -862,26 +901,34 @@ a {
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
+  opacity: 1;
+  transition: opacity 250ms var(--transition-default-timing);
 }
 
 .modal {
   position: absolute;
-  min-width: 228px;
-  min-height: 282px;
+  min-width: 528px;
+  min-height: 581px;
   border-radius: 4px;
   top: 50%;
   left: 50%;
   padding: 40px;
   background-color: var(--white-color);
-  transform: translate(-50%, -50%);
+  transform: scale(1) translate(-50%, -50%);
+
+  transition: transform 250ms var(--transition-default-timing);
 }
 
 .modal__close-btn {
   position: absolute;
-  right: 0;
+  right: 40px;
 }
 
 .modal__backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.modal__backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
 }

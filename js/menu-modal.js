@@ -2,6 +2,7 @@ const refs = {
   heroBtn: document.querySelector('[data-hero-button]'),
   modalBackdrop: document.querySelector('[data-modal-backdrop]'),
   closeModal: document.querySelector('[data-modal-close]'),
+  bodyRef: document.body,
 };
 
 refs.heroBtn.addEventListener('click', onModalOpen);
