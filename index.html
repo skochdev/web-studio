@@ -620,6 +620,54 @@
         <button class="modal__close-btn" data-modal-close type="button">
           Close
         </button>
+        <form class="modal-form">
+          <label class="modal-form__label" for="username">Name</label>
+          <input
+            class="modal-form__input"
+            type="text"
+            name="username"
+            id="username"
+          />
+
+          <label class="modal-form__label" for="userphone">Phone</label>
+          <input
+            class="modal-form__input"
+            type="tel"
+            name="userphone"
+            id="userphone"
+          />
+
+          <label class="modal-form__label" for="useremail">Email</label>
+          <input
+            class="modal-form__input"
+            type="email"
+            name="useremail"
+            id="useremail"
+          />
+          <label class="modal-form__label" for="modal-form-textarea"
+            >Leave a comment</label
+          >
+          <textarea
+            placeholder="Type a few words"
+            class="modal-form__textarea"
+            name="modal-form-textarea"
+            id="modal-form-textarea"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="modal-form__terms">
+            <input
+              class="modal-form__terms-checkbox"
+              type="checkbox"
+              name="terms"
+              id="terms"
+            />
+            <p class="modal-form__terms-text">
+              I accept the <a href="">Terms of Service</a>
+            </p>
+          </div>
+          <button class="button" type="submit">submit</button>
+        </form>
       </div>
     </div>
 

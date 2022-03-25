@@ -16,11 +16,23 @@
   </head>
   <body>
     <section class="test-section">
-      <article class="test-product">
-        <div class="card-wrapper">
-          <p class="descr-test">SOME TEXT</p>
-        </div>
-      </article>
+      <form class="js-speaker-form">
+        <label for="username">Name</label>
+        <input type="text" name="username" id="username" />
+      </form>
     </section>
+    <script>
+      (() => {
+        document
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
+          });
+      })();
+    </script>
   </body>
 </html>
