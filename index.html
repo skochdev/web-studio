@@ -617,59 +617,110 @@
 
     <div class="modal__backdrop is-hidden" data-modal-backdrop>
       <div class="modal">
-        <button class="modal__close-btn" data-modal-close type="button">
-          Close
-        </button>
+        <button
+          class="modal__close-btn"
+          data-modal-close
+          type="button"
+        ></button>
+        <b class="modal__action-call"
+          >Leave us a message, we will contact you shortly</b
+        >
         <form class="modal-form">
-          <label class="modal-form__label" for="username">Name</label>
-          <input
-            class="modal-form__input"
-            type="text"
-            name="username"
-            id="username"
-          />
+          <div class="modal-form__input-wrapper">
+            <input
+              placeholder="placeholder to keep label on top when input is not empty"
+              class="modal-form__input"
+              type="text"
+              name="username"
+              id="username"
+            />
+            <label
+              class="modal-form__label modal-form__label--absolute"
+              for="username"
+              >Name</label
+            >
+          </div>
 
-          <label class="modal-form__label" for="userphone">Phone</label>
-          <input
-            class="modal-form__input"
-            type="tel"
-            name="userphone"
-            id="userphone"
-          />
+          <div class="modal-form__input-wrapper">
+            <input
+              placeholder="placeholder to keep label on top when input is not empty"
+              class="modal-form__input"
+              type="tel"
+              name="userphone"
+              id="userphone"
+            />
+            <label
+              class="modal-form__label modal-form__label--absolute"
+              for="userphone"
+              >Phone</label
+            >
+          </div>
 
-          <label class="modal-form__label" for="useremail">Email</label>
-          <input
-            class="modal-form__input"
-            type="email"
-            name="useremail"
-            id="useremail"
-          />
-          <label class="modal-form__label" for="modal-form-textarea"
-            >Leave a comment</label
-          >
-          <textarea
-            placeholder="Type a few words"
-            class="modal-form__textarea"
-            name="modal-form-textarea"
-            id="modal-form-textarea"
-            cols="30"
-            rows="10"
-          ></textarea>
+          <div class="modal-form__input-wrapper">
+            <input
+              placeholder="placeholder to keep label on top when input is not empty"
+              class="modal-form__input"
+              type="email"
+              name="useremail"
+              id="useremail"
+            />
+            <label
+              class="modal-form__label modal-form__label--absolute"
+              for="useremail"
+              >Email</label
+            >
+          </div>
+
+          <div class="modal-form__input-wrapper">
+            <textarea
+              placeholder="placeholder to keep label on top when input is not empty"
+              class="modal-form__textarea"
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <label
+              class="modal-form__label modal-form__label--absolute-textarea"
+              for="comments"
+              >Leave a comment</label
+            >
+          </div>
+
           <div class="modal-form__terms">
             <input
               class="modal-form__terms-checkbox"
               type="checkbox"
               name="terms"
+              value="terms-accepted"
               id="terms"
             />
-            <p class="modal-form__terms-text">
-              I accept the <a href="">Terms of Service</a>
-            </p>
+            <label class="modal-form__terms-text" for="terms"
+              >I accept the
+              <a class="modal-form__terms-link" href=""
+                >Terms of Service</a
+              ></label
+            >
+            <!-- <p class="modal-form__terms-text">
+              I accept the
+              <a class="modal-form__terms-link" href="">Terms of Service</a>
+            </p> -->
           </div>
           <button class="button" type="submit">submit</button>
         </form>
       </div>
     </div>
+    <script>
+      (() => {
+        document.querySelector('.modal-form').addEventListener('submit', e => {
+          e.preventDefault();
+
+          new FormData(e.currentTarget).forEach((value, name) =>
+            console.log(`${name}: ${value}`),
+          );
+        });
+      })();
+    </script>
 
     <script src="./js/menu-modal.js" type="module"></script>
   </body>
