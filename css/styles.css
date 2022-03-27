@@ -987,12 +987,14 @@ a {
   transition: var(--transform-transition);
 }
 
-.modal-form__textarea:hover + .modal-form__label--absolute-textarea,
+.modal-form__textarea:hover + .modal-form__label--absolute-textarea {
+  color: var(--accent-color);
+}
+
 .modal-form__textarea:focus + .modal-form__label--absolute-textarea,
 .modal-form__textarea:not(:placeholder-shown)
   + .modal-form__label--absolute-textarea {
   transform: translateY(-250%);
-  color: var(--accent-color);
 }
 
 .modal-form__input {
@@ -1014,9 +1016,12 @@ a {
 }
 
 .modal-form__input:hover + .modal-form__label,
+.modal-form__input:focus + .modal-form__label {
+  color: var(--accent-color);
+}
+
 .modal-form__input:focus + .modal-form__label,
 .modal-form__input:not(:placeholder-shown) + .modal-form__label {
-  color: var(--accent-color);
   transform: translateY(-320%);
 }
 
