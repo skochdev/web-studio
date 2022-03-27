@@ -935,14 +935,22 @@ a {
 
 .modal__close-btn {
   position: absolute;
-  padding: 10px;
+  top: -15px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   background-color: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  right: 10px;
   width: 30px;
   height: 30px;
-  top: -15px;
+  padding: 6px;
+}
+
+.modal__close-btn:hover .modal__close-icon,
+.modal__close-btn:focus .modal__close-icon {
+  fill: var(--accent-color);
 }
 
 .modal__backdrop.is-hidden {
@@ -968,7 +976,8 @@ a {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: var(--paragraph-color);
-  transition: var(--color-transition);
+
+  transition: var(--color-transition), var(--transform-transition);
 }
 
 .modal-form__label--absolute {
@@ -976,7 +985,6 @@ a {
   left: 12px;
   bottom: 50%;
   transform: translateY(-50%);
-  transition: var(--transform-transition);
 }
 
 .modal-form__label--absolute-textarea {
@@ -984,10 +992,12 @@ a {
   left: 12px;
   bottom: 80%;
   transform: translateY(-50%);
-  transition: var(--transform-transition);
+  color: var(--paragraph-color);
+  transition: var(--transform-transition), var(--color-transition);
 }
 
-.modal-form__textarea:hover + .modal-form__label--absolute-textarea {
+.modal-form__textarea:hover + .modal-form__label--absolute-textarea,
+.modal-form__textarea:focus + .modal-form__label--absolute-textarea {
   color: var(--accent-color);
 }
 
@@ -1049,6 +1059,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 30px;
 }
 
 .modal-form__terms-text {
@@ -1057,10 +1070,34 @@ a {
 
 .modal-form__terms-link {
   color: var(--accent-color);
+  text-decoration: underline;
 }
 
 .modal-form__terms-checkbox {
   margin-right: 7px;
   width: 16px;
   height: 15px;
+}
+
+.modal__close-icon {
+  width: 11px;
+  height: 11px;
+  color: var(--default-text-color);
+  transition: var(--fill-transition);
+}
+
+.modal_submit-btn {
+  text-transform: capitalize;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  box-shadow: transparent;
+  transition: var(--box-shadow-transition), var(--bgc-transition);
+}
+
+.modal_submit-btn:hover,
+.modal_submit-btn:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

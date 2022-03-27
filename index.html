@@ -617,15 +617,10 @@
 
     <div class="modal__backdrop is-hidden" data-modal-backdrop>
       <div class="modal">
-        <button
-          class="modal__close-btn"
-          data-modal-close
-          type="button"
-        ></button>
         <b class="modal__action-call"
           >Leave us a message, we will contact you shortly</b
         >
-        <form class="modal-form">
+        <form class="modal-form" data-modal-form>
           <div class="modal-form__input-wrapper">
             <input
               placeholder="placeholder to keep label on top when input is not empty"
@@ -701,26 +696,22 @@
                 >Terms of Service</a
               ></label
             >
-            <!-- <p class="modal-form__terms-text">
-              I accept the
-              <a class="modal-form__terms-link" href="">Terms of Service</a>
-            </p> -->
           </div>
-          <button class="button" type="submit">submit</button>
+          <button class="modal__close-btn" type="button" data-modal-close>
+            <svg class="modal__close-icon">
+              <use href="./images/icons/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <button
+            class="button modal_submit-btn"
+            type="submit"
+            data-modal-submit
+          >
+            submit
+          </button>
         </form>
       </div>
     </div>
-    <script>
-      (() => {
-        document.querySelector('.modal-form').addEventListener('submit', e => {
-          e.preventDefault();
-
-          new FormData(e.currentTarget).forEach((value, name) =>
-            console.log(`${name}: ${value}`),
-          );
-        });
-      })();
-    </script>
 
     <script src="./js/menu-modal.js" type="module"></script>
   </body>
