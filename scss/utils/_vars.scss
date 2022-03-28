@@ -1,0 +1,30 @@
+$accent-color: #2196f3;
+$default-text-color: #212121;
+$paragraph-color: #757575;
+$white-color: #ffffff;
+$transparent-text: rgba(255, 255, 255, 0.6);
+$primary-bg-fill: #ffffff;
+$secondary-bg-fill: #f5f4fa;
+$underlay-bg-color: #2f303a;
+$hero-btn-hover: #188ce8;
+$icons-default-color: #afb1b8;
+
+/* Font-weights */
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-black: 900;
+
+/* Global dimensions */
+$page-container: 1200px;
+$section-padding: 94px;
+
+/* Transitions */
+$transition-default-timing: cubic-bezier(0.4, 0, 0.2, 1);
+
+$color-transition: color 250ms $transition-default-timing;
+$bgc-transition: background-color 250ms $transition-default-timing;
+$fill-transition: fill 250ms $transition-default-timing;
+$box-shadow-transition: box-shadow 250ms $transition-default-timing;
+$transform-transition: transform 250ms $transition-default-timing;
+$border-color-transition: border-color 250ms $transition-default-timing;

@@ -1,0 +1,20 @@
+.features-section,
+.portfolio-section {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+}
+
+.doings-section {
+  padding-bottom: $section-padding;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: $default-text-color;
+  font-weight: $fw-bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
