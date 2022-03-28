@@ -1090,8 +1090,8 @@ a {
 }
 
 .modal__close-icon {
-  width: 16px;
-  height: 16px;
+  width: 13px;
+  height: 13px;
   color: var(--default-text-color);
   transition: var(--fill-transition);
 }
