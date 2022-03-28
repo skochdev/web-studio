@@ -29,14 +29,16 @@
       <title>checkbox-frame</title>
       <path d="M30.34 3.556v24.887h-26.547v-24.887h26.547zM30.34 0h-26.547c-2.086 0-3.793 1.6-3.793 3.556v24.887c0 1.956 1.707 3.556 3.793 3.556h26.547c2.086 0 3.793-1.6 3.793-3.556v-24.887c0-1.956-1.707-3.556-3.793-3.556z"></path>
     </symbol>
-    <symbol id="icon-checkcheckbox-checked"
+    <symbol id="icon-checkbox-checked"
       viewBox="0 0 34 32">
-      <title>checkcheckbox-checked</title>
-      <path d="M4.267 0h25.6c2.356 0 4.267 1.91 4.267 4.267v23.467c0 2.356-1.91 4.267-4.267 4.267h-25.6c-2.356 0-4.267-1.91-4.267-4.267v-23.467c0-2.356 1.91-4.267 4.267-4.267z"></path>
-      <path stroke-width="0.4267"
+      <title>icon-checkbox-checked</title>
+      <path fill="#fff"
+        stroke="#fff"
+        stroke-width="0.4267"
         stroke-miterlimit="4"
         stroke-linecap="butt"
         stroke-linejoin="miter"
+        style="fill: var(--color2, #fff); stroke: var(--color2, #fff)"
         d="M8.442 16.538l-0.147-0.141-0.147 0.139-2.057 1.95 0.162 0.156 7.605 7.253 0.147-0.141 16.171-15.426-0.162-0.154-2.029-1.935-0.147 0.141-13.98 13.325-5.417-5.167z"></path>
     </symbol>
     <symbol id="icon-comp06"

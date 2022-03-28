@@ -621,82 +621,70 @@
           >Leave us a message, we will contact you shortly</b
         >
         <form class="modal-form" data-modal-form>
-          <div class="modal-form__input-wrapper">
+          <label class="modal-form__input-wrapper">
             <input
-              placeholder="placeholder to keep label on top when input is not empty"
+              placeholder=" "
               class="modal-form__input"
               type="text"
               name="username"
-              id="username"
             />
-            <label
-              class="modal-form__label modal-form__label--absolute"
-              for="username"
-              >Name</label
+            <span class="modal-form__label modal-form__label--absolute"
+              >Name</span
             >
-          </div>
+          </label>
 
-          <div class="modal-form__input-wrapper">
+          <label class="modal-form__input-wrapper">
             <input
-              placeholder="placeholder to keep label on top when input is not empty"
+              placeholder=" "
               class="modal-form__input"
               type="tel"
               name="userphone"
-              id="userphone"
-            />
-            <label
-              class="modal-form__label modal-form__label--absolute"
-              for="userphone"
-              >Phone</label
-            >
-          </div>
+            /><span class="modal-form__label modal-form__label--absolute"
+              >Phone</span
+            ></label
+          >
 
-          <div class="modal-form__input-wrapper">
+          <label class="modal-form__input-wrapper">
             <input
-              placeholder="placeholder to keep label on top when input is not empty"
+              placeholder=" "
               class="modal-form__input"
               type="email"
               name="useremail"
               id="useremail"
             />
-            <label
-              class="modal-form__label modal-form__label--absolute"
-              for="useremail"
-              >Email</label
-            >
-          </div>
+            <span class="modal-form__label modal-form__label--absolute"
+              >Email</span
+            ></label
+          >
 
-          <div class="modal-form__input-wrapper">
+          <label class="modal-form__input-wrapper">
             <textarea
-              placeholder="placeholder to keep label on top when input is not empty"
+              autocomplete=""
+              placeholder=" "
               class="modal-form__textarea"
               name="comments"
-              id="comments"
               cols="30"
               rows="10"
             ></textarea>
-            <label
-              class="modal-form__label modal-form__label--absolute-textarea"
-              for="comments"
-              >Leave a comment</label
-            >
-          </div>
+            <span class="modal-form__label modal-form__label--absolute-textarea"
+              >Leave us a comment</span
+            ></label
+          >
 
-          <div class="modal-form__terms">
+          <label class="modal-form__terms">
             <input
               class="modal-form__terms-checkbox"
               type="checkbox"
               name="terms"
               value="terms-accepted"
-              id="terms"
             />
-            <label class="modal-form__terms-text" for="terms"
-              >I accept the
-              <a class="modal-form__terms-link" href=""
-                >Terms of Service</a
-              ></label
-            >
-          </div>
+            <svg class="modal-form__icon-checkbox">
+              <use href="./images/icons/icons.svg#icon-checkbox-checked"></use>
+            </svg>
+            <span class="modal-form__terms-text">I accept the</span>
+            <a class="modal-form__terms-link" href="">Terms of Service</a>
+          </label>
+
           <button class="modal__close-btn" type="button" data-modal-close>
             <svg class="modal__close-icon">
               <use href="./images/icons/icons.svg#icon-close"></use>
