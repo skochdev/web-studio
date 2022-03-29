@@ -429,20 +429,14 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .features-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .features-list__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
   .features-list__item {
     width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    width: calc((100% - 120px) / 4);
     margin: 15px;
   }
 }
@@ -458,6 +452,24 @@ img {
 .features-list__icon {
   width: 70px;
   height: 70px;
+}
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .common-heading {
