@@ -1,0 +1,32 @@
+.hero {
+  width: $mobile;
+  margin: 0 auto;
+  height: 400px;
+  background-color: $underlay-bg-color;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+
+  @media screen and(min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and(min-width: $pc) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 1600px;
+    height: 600px;
+  }
+
+  &__heading {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-weight: $fw-black;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $white-color;
+  }
+}

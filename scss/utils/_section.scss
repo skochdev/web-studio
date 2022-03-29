@@ -1,0 +1,24 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__hero {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &__team {
+    background-color: $secondary-bg-fill;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: $fw-bold;
+    font-size: 28px;
+    line-height: 1.17;
+    color: $default-text-color;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}

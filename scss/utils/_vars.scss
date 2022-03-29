@@ -1,3 +1,10 @@
+/* Container breakpoints */
+
+$mobile: 480px;
+$tablet: 768px;
+$pc: 1200px;
+
+/* Colors */
 $accent-color: #2196f3;
 $default-text-color: #212121;
 $paragraph-color: #757575;
@@ -15,8 +22,7 @@ $fw-medium: 500;
 $fw-bold: 700;
 $fw-black: 900;
 
-/* Global dimensions */
-$page-container: 1200px;
+/* Global padding */
 $section-padding: 94px;
 
 /* Transitions */
