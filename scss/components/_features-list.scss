@@ -1,4 +1,14 @@
 .features-list {
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and(min-width: $pc) {
+    flex-wrap: nowrap;
+  }
+
   &__item {
     @media screen and(min-width: $tablet) {
       width: calc((100% - 2 * 30px) / 2);
@@ -24,17 +34,6 @@
   &__icon {
     width: 70px;
     height: 70px;
-  }
-
-  @media screen and(min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-
-  @media screen and(min-width: $pc) {
-    flex-wrap: nowrap;
-    justify-content: center;
   }
 
   &__item:not(:last-child) {
