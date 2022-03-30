@@ -1,0 +1,42 @@
+.features {
+  &__list {
+    @media screen and(min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+  &__list-item {
+    @media screen and(max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and(min-width: $tablet) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and(min-width: $pc) {
+      width: calc((100% - 4 * 30px) / 4);
+      margin: 15px;
+    }
+  }
+
+  &__list-decoration {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: $secondary-bg-fill;
+  }
+
+  &__list-icon {
+    display: block;
+    width: 70px;
+    height: 70px;
+  }
+}

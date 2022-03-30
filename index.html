@@ -27,63 +27,70 @@
   </head>
   <body>
     <header class="header">
-      <div class="page-container header-wrapper">
-        <nav class="main-nav">
-          <a class="logo-header" href="./index.html"
-            ><span class="logo-header__accent">Web</span>Studio
-          </a>
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a class="site-nav__link current" href="./index.html">Studio</a>
+      <div class="container">
+        <div class="header__wrapper">
+          <nav class="main-nav">
+            <a class="logo logo__header" href="./index.html"
+              ><span class="logo__header--accent">Web</span>Studio
+            </a>
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link current" href="./index.html">Studio</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./contacts.html">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="main-nav__contacts">
+            <li class="main-nav__contacts-item">
+              <a
+                class="main-nav__contacts-link"
+                href="mailto:info@devstudio.com"
+              >
+                <svg
+                  class="contacts-icon contacts-icon__envelope"
+                  width="16"
+                  height="12"
+                >
+                  <use href="./images/icons/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./contacts.html">Contacts</a>
+            <li class="main-nav__contacts-item">
+              <a class="main-nav__contacts-link" href="tel:+380961111111">
+                <svg
+                  class="contacts-icon contacts-icon__smartphone"
+                  width="10"
+                  height="16"
+                >
+                  <use href="./images/icons/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-
-        <ul class="main-nav__contacts">
-          <li class="main-nav__contacts-item">
-            <a class="main-nav__contacts-link" href="mailto:info@devstudio.com">
-              <svg
-                class="contacts-icon contacts-icon__envelope"
-                width="16"
-                height="12"
-              >
-                <use href="./images/icons/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="main-nav__contacts-item">
-            <a class="main-nav__contacts-link" href="tel:+380961111111">
-              <svg
-                class="contacts-icon contacts-icon__smartphone"
-                width="10"
-                height="16"
-              >
-                <use href="./images/icons/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <svg class="header__icon-burger">
+            <use href="./images/icons/icons.svg#icon-mobile-burger"></use>
+          </svg>
+        </div>
       </div>
     </header>
-
     <main>
       <!-- * HERO -->
-      <section class="section hero-section">
-        <div class="hero-container">
-          <div class="page-container">
-            <h1 class="hero-heading">
+      <section class="section hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <h1 class="hero__heading">
               Effective Solutions<br />
               For Your Business
             </h1>
-            <button class="button hero-button" data-hero-button type="button">
+            <button class="button hero__button" data-hero-button type="button">
               Make an Order
             </button>
           </div>
@@ -92,13 +99,13 @@
       <!--  HERO -->
 
       <!-- * FEATURES -->
-      <section class="section features-section">
-        <div class="page-container">
+      <section class="section features">
+        <div class="container">
           <h2 class="section-title visually-hidden">Features</h2>
-          <ul class="features-list">
-            <li class="features-list__item">
-              <div class="features-list__decoration">
-                <svg class="features-list__icon">
+          <ul class="features__list">
+            <li class="features__list-item">
+              <div class="features__list-decoration">
+                <svg class="features__list-icon">
                   <use href="./images/icons/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -109,9 +116,9 @@
               </p>
             </li>
 
-            <li class="features-list__item">
-              <div class="features-list__decoration">
-                <svg class="features-list__icon">
+            <li class="features__list-item">
+              <div class="features__list-decoration">
+                <svg class="features__list-icon">
                   <use href="./images/icons/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -123,9 +130,9 @@
               </p>
             </li>
 
-            <li class="features-list__item">
-              <div class="features-list__decoration">
-                <svg class="features-list__icon">
+            <li class="features__list-item">
+              <div class="features__list-decoration">
+                <svg class="features__list-icon">
                   <use href="./images/icons/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -137,9 +144,9 @@
               </p>
             </li>
 
-            <li class="features-list__item">
-              <div class="features-list__decoration">
-                <svg class="features-list__icon">
+            <li class="features__list-item">
+              <div class="features__list-decoration">
+                <svg class="features__list-icon">
                   <use href="./images/icons/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -156,8 +163,8 @@
       <!--  FEATURES -->
 
       <!-- * WHAT WE DO -->
-      <section class="section doings-section">
-        <div class="page-container">
+      <!-- <section class="section doings-section">
+        <div class="container">
           <h2 class="section-title">What we do</h2>
           <ul class="doings-list">
             <li class="doings-list__item">
@@ -198,12 +205,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--  WHAT WE DO -->
 
       <!-- * TEAM -->
-      <section class="section team-section">
-        <div class="page-container">
+      <!-- <section class="section team-section">
+        <div class="container">
           <h2 class="section-title">Our team</h2>
           <ul class="team-list">
             <li class="team-card">
@@ -491,56 +498,58 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--  TEAM -->
-      <section class="section clients-section">
-        <h2 class="section-title">Our clients</h2>
-        <ul class="clients-list page-container">
-          <li class="clients-list__item">
-            <a class="clients-list__link" href="">
-              <svg class="clients-list__icon">
-                <use href="./images/icons/icons.svg#icon-comp01"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients-list__item">
-            <a class="clients-list__link" href=""
-              ><svg class="clients-list__icon">
-                <use href="./images/icons/icons.svg#icon-comp02"></use></svg
-            ></a>
-          </li>
-          <li class="clients-list__item">
-            <a class="clients-list__link" href="">
-              <svg class="clients-list__icon">
-                <use href="./images/icons/icons.svg#icon-comp03"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients-list__item">
-            <a class="clients-list__link" href="">
-              <svg class="clients-list__icon">
-                <use href="./images/icons/icons.svg#icon-comp04"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients-list__item">
-            <a class="clients-list__link" href="">
-              <svg class="clients-list__icon">
-                <use href="./images/icons/icons.svg#icon-comp05"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients-list__item">
-            <a class="clients-list__link" href="">
-              <svg class="clients-list__icon">
-                <use href="./images/icons/icons.svg#icon-comp06"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <footer class="footer">
-        <div class="page-container footer-wrapper">
+      <!-- <section class="section clients-section">
+        <div class="container">
+          <h2 class="section-title">Our clients</h2>
+          <ul class="clients-list">
+            <li class="clients-list__item">
+              <a class="clients-list__link" href="">
+                <svg class="clients-list__icon">
+                  <use href="./images/icons/icons.svg#icon-comp01"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a class="clients-list__link" href=""
+                ><svg class="clients-list__icon">
+                  <use href="./images/icons/icons.svg#icon-comp02"></use></svg
+              ></a>
+            </li>
+            <li class="clients-list__item">
+              <a class="clients-list__link" href="">
+                <svg class="clients-list__icon">
+                  <use href="./images/icons/icons.svg#icon-comp03"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a class="clients-list__link" href="">
+                <svg class="clients-list__icon">
+                  <use href="./images/icons/icons.svg#icon-comp04"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a class="clients-list__link" href="">
+                <svg class="clients-list__icon">
+                  <use href="./images/icons/icons.svg#icon-comp05"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a class="clients-list__link" href="">
+                <svg class="clients-list__icon">
+                  <use href="./images/icons/icons.svg#icon-comp06"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+      <!-- <footer class="footer">
+        <div class="container footer-wrapper">
           <div class="footer-address">
             <a class="logo-footer" href="./index.html">
               <span class="logo-footer__accent">Web</span>Studio
@@ -619,10 +628,10 @@
         </div>
 
         <p class="made-by">Bohdan Skochii, GoIT Full Stack Course</p>
-      </footer>
+      </footer> -->
     </main>
 
-    <div class="modal__backdrop is-hidden" data-modal-backdrop>
+    <!-- <div class="modal__backdrop is-hidden" data-modal-backdrop>
       <div class="modal">
         <b class="modal__action-call"
           >Leave us a message, we will contact you shortly</b
@@ -706,7 +715,7 @@
           </button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/menu-modal.js" type="module"></script>
   </body>

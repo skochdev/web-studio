@@ -1,0 +1,40 @@
+.common-paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: $fw-regular;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.common-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: $default-text-color;
+  font-weight: $fw-bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.common-heading__doings {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: $white-color;
+  margin: 0;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.common-paragraph__team-card {
+  margin-bottom: 16px;
+  font-weight: $fw-regular;
+  font-size: 16px;
+  line-height: calc(16 / 19);
+  color: $paragraph-color;
+}
