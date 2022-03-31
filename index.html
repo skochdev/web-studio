@@ -75,9 +75,78 @@
               >
             </li>
           </ul>
-          <svg class="header__icon-burger">
-            <use href="./images/icons/icons.svg#icon-mobile-burger"></use>
-          </svg>
+          <button type="button" class="mobile-menu__button" data-menu-button>
+            <svg
+              class="header__icon-burger"
+              aria-label="mobile menu toggle"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <use
+                class="icon-mobile icon-mobile__burger"
+                href="./images/icons/icons.svg#icon-mobile-burger"
+              ></use>
+              <use
+                class="icon-mobile icon-mobile__close"
+                href="./images/icons/icons.svg#icon-burger-close"
+              ></use>
+            </svg>
+
+            <!-- * MOBILE MENU -->
+
+            <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+              <ul class="mobile-menu__nav">
+                <li class="mobile-menu__nav-item">
+                  <a class="mobile-menu__nav-link current" href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mobile-menu__nav-item">
+                  <a class="mobile-menu__nav-link" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mobile-menu__nav-item">
+                  <a class="mobile-menu__nav-link" href="./contacts.html"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="mobile-menu__contacts">
+                <li class="mobile-menu__contacts-item">
+                  <a
+                    class="mobile-menu__contacts-link"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="mobile-menu__contacts-item">
+                  <a
+                    class="mobile-menu__contacts-link"
+                    href="tel:+380961111111"
+                  >
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-menu__socials-list">
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link">Instagram</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link">Facebook</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link">LinkedIn</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link">Twitter</a>
+                </li>
+              </ul>
+            </div>
+          </button>
         </div>
       </div>
     </header>
@@ -645,7 +714,7 @@
       </footer>
     </main>
 
-    <!-- <div class="modal__backdrop is-hidden" data-modal-backdrop>
+    <div class="modal__backdrop is-hidden" data-modal-backdrop>
       <div class="modal">
         <b class="modal__action-call"
           >Leave us a message, we will contact you shortly</b
@@ -729,8 +798,9 @@
           </button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/menu-modal.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 </html>
