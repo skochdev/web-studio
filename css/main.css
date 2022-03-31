@@ -801,6 +801,7 @@ img {
 }
 
 .mobile-menu__socials-list {
+  margin: 0 auto;
   color: #2196f3;
   display: flex;
   flex-wrap: wrap;
