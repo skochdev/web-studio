@@ -86,7 +86,7 @@
 
 .mobile-menu__socials-item:not(:last-child):after {
   content: '';
-  margin-left: 5px;
+  margin-left: 10px;
   color: $paragraph-color;
   border-left: 1px solid;
 }
