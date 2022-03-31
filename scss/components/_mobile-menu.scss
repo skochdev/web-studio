@@ -79,6 +79,7 @@
 .mobile-menu__socials-list {
   color: $accent-color;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-menu__socials-item:not(:last-child):after {

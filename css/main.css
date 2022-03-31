@@ -802,6 +802,7 @@ img {
 .mobile-menu__socials-list {
   color: #2196f3;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-menu__socials-item:not(:last-child):after {
