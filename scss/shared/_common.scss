@@ -38,3 +38,14 @@
   line-height: calc(16 / 19);
   color: $paragraph-color;
 }
+
+.common-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: $default-text-color;
+  font-weight: $fw-bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}

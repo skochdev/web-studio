@@ -478,9 +478,6 @@ a {
   justify-content: center;
   width: 170px;
   height: 92px;
-  border: 1px solid $icons-default-color;
-  transition: $border-color-transition;
-  border-radius: 4px;
 }
 
 .clients-list__item + .clients-list__item {
@@ -492,15 +489,12 @@ a {
   transition: $fill-transition;
   width: 106px;
   height: 60px;
+  border: 1px solid $icons-default-color;
+  transition: $border-color-transition;
+  border-radius: 4px;
 }
 
 .clients-list__link:hover .clients-list__icon,
-.clients-list__link:hover {
-  fill: $accent-color;
-  border-color: $accent-color;
-}
-
-.clients-list__link:focus .clients-list__icon,
 .clients-list__link:focus {
   fill: $accent-color;
   border-color: $accent-color;

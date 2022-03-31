@@ -11,10 +11,11 @@
     padding-bottom: 16px;
   }
 
-  &__header--accent {
+  &--accent {
     color: $accent-color;
   }
 
   &__footer {
+    color: $white-color;
   }
 }

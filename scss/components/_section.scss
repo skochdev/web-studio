@@ -10,4 +10,10 @@
       padding-top: calc(118px + 80px);
     }
   }
+
+  &.section-doings {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
 }
