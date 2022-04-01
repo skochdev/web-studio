@@ -9,6 +9,11 @@
   &__header {
     padding-top: 16px;
     padding-bottom: 16px;
+
+    @media screen and (min-width: $tablet) {
+      margin-right: 93px;
+      padding: 20px 0;
+    }
   }
 
   &--accent {
