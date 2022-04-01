@@ -1,0 +1,124 @@
+.team {
+}
+
+.team-list {
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.team-card {
+  max-width: 450px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: $white-color;
+
+  & + & {
+    @media screen and(max-width: 767px) {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and(min-width: $tablet) {
+    margin: 15px;
+    flex-wrap: wrap;
+    width: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and(min-width: $pc) {
+    margin: 15px;
+
+    width: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+.team-card__img {
+  display: block;
+  max-width: 100%;
+
+  @media screen and(min-width: $mobile) {
+    width: 100%;
+  }
+}
+
+.team-card__info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-align: center;
+}
+
+.team-card__name {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: $default-text-color;
+  font-weight: $fw-medium;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.common-paragraph__team-card {
+  margin-bottom: 16px;
+  font-weight: $fw-regular;
+  font-size: 16px;
+  line-height: calc(16 / 19);
+  color: $paragraph-color;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item {
+  border-radius: 50%;
+}
+
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.team-socials__link {
+  background-color: $white-color;
+  transition: $bgc-transition;
+}
+
+.socials__item + .socials__item {
+  margin-left: 10px;
+}
+
+.socials__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.team-socials__icon {
+  fill: $icons-default-color;
+  transition: $fill-transition;
+}
+
+.team__socials-link {
+  background-color: $white-color;
+  transition: $bgc-transition;
+}
+
+.team__socials-link:hover,
+.team__socials-link:focus {
+  background-color: $accent-color;
+}
+
+.team__socials-link:hover .team-socials__icon,
+.team__socials-link:focus .team-socials__icon {
+  fill: $white-color;
+}

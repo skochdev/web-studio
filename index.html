@@ -152,16 +152,22 @@
     </header>
     <main>
       <!-- * HERO -->
-      <section class="section hero">
-        <div class="container">
-          <div class="hero__wrapper">
-            <h1 class="hero__heading">
-              Effective Solutions<br />
-              For Your Business
-            </h1>
-            <button class="button hero__button" data-hero-button type="button">
-              Make an Order
-            </button>
+      <section class="section section-nopadding">
+        <div class="hero">
+          <div class="container">
+            <div class="hero__wrapper">
+              <h1 class="hero__heading">
+                Effective Solutions<br />
+                For Your Business
+              </h1>
+              <button
+                class="button hero__button"
+                data-hero-button
+                type="button"
+              >
+                Make an Order
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -232,7 +238,7 @@
       <!--  FEATURES -->
 
       <!-- * WHAT WE DO -->
-      <section class="section section-doings">
+      <section class="section doings">
         <div class="container">
           <h2 class="common-title">What we do</h2>
           <ul class="doings-list">
@@ -278,296 +284,318 @@
       <!--  WHAT WE DO -->
 
       <!-- * TEAM -->
-      <!-- <section class="section section-team">
+      <section class="section section-alternative-background">
         <div class="container">
-          <h2 class="common-title">Our team</h2>
-          <ul class="team-list">
-            <li class="team-card">
-              <img
-                class="team-card__img"
-                width="270"
-                src="./images/team-photos/img-1.jpg"
-                alt="Angela Steevens"
-                loading="lazy"
-              />
-              <div class="team-card__info">
-                <h3 class="team-card__name">Angela Steevens</h3>
-                <p class="common-paragraph common-paragraph__team-card">
-                  Project Manager
-                </p>
-                <ul class="socials">
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="Instagram"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use
-                          href="./images/icons/icons.svg#icon-instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
+          <div class="team">
+            <h2 class="common-title">Our team</h2>
+            <ul class="team-list">
+              <li class="team-card">
+                <img
+                  class="team-card__img"
+                  srcset="
+                    ./images/team-photos/team02.jpg    270w,
+                    ./images/team-photos/team02@2x.jpg 540w
+                  "
+                  src="./images/team-photos/team02.jpg"
+                  alt="Angela Steevens"
+                  loading="lazy"
+                />
+                <div class="team-card__info">
+                  <h3 class="team-card__name">Angela Steevens</h3>
+                  <p class="common-paragraph common-paragraph__team-card">
+                    Project Manager
+                  </p>
+                  <ul class="socials">
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="Instagram"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="Twitter"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use href="./images/icons/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="Twitter"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="Facebook"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use
-                          href="./images/icons/icons.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="Facebook"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="LinkedIn"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use
-                          href="./images/icons/icons.svg#icon-linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="LinkedIn"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-            <li class="team-card">
-              <img
-                class="team-card__img"
-                width="270"
-                src="./images/team-photos/img-2.jpg"
-                alt="Robert Tompson"
-                loading="lazy"
-              />
-              <div class="team-card__info">
-                <h3 class="team-card__name">Robert Tompson</h3>
-                <p class="common-paragraph common-paragraph__team-card">
-                  Designer
-                </p>
-                <ul class="socials">
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="Instagram"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use
-                          href="./images/icons/icons.svg#icon-instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
+              <li class="team-card">
+                <img
+                  class="team-card__img"
+                  srcset="
+                    ./images/team-photos/team01.jpg    270w,
+                    ./images/team-photos/team01@2x.jpg 540w
+                  "
+                  src="./images/team-photos/team01.jpg"
+                  alt="Robert Tompson"
+                  loading="lazy"
+                />
+                <div class="team-card__info">
+                  <h3 class="team-card__name">Robert Tompson</h3>
+                  <p class="common-paragraph common-paragraph__team-card">
+                    Designer
+                  </p>
+                  <ul class="socials">
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="Instagram"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="Twitter"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use href="./images/icons/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="Twitter"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="Facebook"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use
-                          href="./images/icons/icons.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="Facebook"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="LinkedIn"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use
-                          href="./images/icons/icons.svg#icon-linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="LinkedIn"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-            <li class="team-card">
-              <img
-                class="team-card__img"
-                width="270"
-                src="./images/team-photos/img-3.jpg"
-                alt="Jake Farley"
-                loading="lazy"
-              />
-              <div class="team-card__info">
-                <h3 class="team-card__name">Jake Farley</h3>
-                <p class="common-paragraph common-paragraph__team-card">
-                  Frontend Developer
-                </p>
-                <ul class="socials">
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="Instagram"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use
-                          href="./images/icons/icons.svg#icon-instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
+              <li class="team-card">
+                <img
+                  class="team-card__img"
+                  srcset="
+                    ./images/team-photos/team03.jpg    270w,
+                    ./images/team-photos/team03@2x.jpg 540w
+                  "
+                  src="./images/team-photos/team03.jpg"
+                  alt="Jake Farley"
+                  loading="lazy"
+                />
+                <div class="team-card__info">
+                  <h3 class="team-card__name">Jake Farley</h3>
+                  <p class="common-paragraph common-paragraph__team-card">
+                    Frontend Developer
+                  </p>
+                  <ul class="socials">
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="Instagram"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="Twitter"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use href="./images/icons/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="Twitter"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="Facebook"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use
-                          href="./images/icons/icons.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="Facebook"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="LinkedIn"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use
-                          href="./images/icons/icons.svg#icon-linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="LinkedIn"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-            <li class="team-card">
-              <img
-                class="team-card__img"
-                width="270"
-                src="./images/team-photos/img-4.jpg"
-                alt="John Jonson"
-                loading="lazy"
-              />
-              <div class="team-card__info">
-                <h3 class="team-card__name">John Jonson</h3>
-                <p class="common-paragraph common-paragraph__team-card">
-                  Backend Developer
-                </p>
-                <ul class="socials">
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="Instagram"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use
-                          href="./images/icons/icons.svg#icon-instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
+              <li class="team-card">
+                <img
+                  class="team-card__img"
+                  srcset="
+                    ./images/team-photos/team04.jpg    270w,
+                    ./images/team-photos/team04@2x.jpg 540w
+                  "
+                  src="./images/team-photos/team04.jpg"
+                  alt="John Jonson"
+                  loading="lazy"
+                />
+                <div class="team-card__info">
+                  <h3 class="team-card__name">John Jonson</h3>
+                  <p class="common-paragraph common-paragraph__team-card">
+                    Backend Developer
+                  </p>
+                  <ul class="socials">
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="Instagram"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="Twitter"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use href="./images/icons/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="Twitter"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="Facebook"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use
-                          href="./images/icons/icons.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="Facebook"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="socials__item team-socials__item">
-                    <a
-                      class="socials__link team__socials-link"
-                      aria-label="LinkedIn"
-                      href=""
-                    >
-                      <svg class="socials__icon team-socials__icon">
-                        <use
-                          href="./images/icons/icons.svg#icon-linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+                    <li class="socials__item team-socials__item">
+                      <a
+                        class="socials__link team__socials-link"
+                        aria-label="LinkedIn"
+                        href=""
+                      >
+                        <svg class="socials__icon team-socials__icon">
+                          <use
+                            href="./images/icons/icons.svg#icon-linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </section> -->
+      </section>
       <!--  TEAM -->
 
       <!-- * CLIENTS -->

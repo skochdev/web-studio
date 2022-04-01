@@ -8,7 +8,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-
+  visibility: none;
+  pointer-events: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -21,6 +22,8 @@
   }
 
   &.is-open {
+    visibility: visible;
+    pointer-events: initial;
     transform: translateX(0);
   }
 }

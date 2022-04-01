@@ -15,6 +15,10 @@
     @media screen and(min-width: $tablet) {
       width: calc((100% - 3 * 30px) / 3);
     }
+
+    @media screen and(min-width: $pc) {
+      width: calc((100% - 6 * 30px) / 6);
+    }
   }
 
   &__link {

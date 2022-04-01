@@ -1,0 +1,30 @@
+.doings-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doings-list__item {
+  position: relative;
+  display: block;
+}
+
+.doings-list__item + .doings-list__item {
+  margin-left: 30px;
+}
+
+.doings-img {
+  display: block;
+}
+
+.common-heading__doings {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: $white-color;
+  margin: 0;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}

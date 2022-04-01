@@ -2,18 +2,24 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &.hero {
-    padding-top: calc(118px + 60px);
-    padding-bottom: 118px;
-
-    @media screen and(min-width: $tablet) {
-      padding-top: calc(118px + 80px);
-    }
+  @media screen and(min-width: $pc) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
+}
 
-  &.section-doings {
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
+.section-nopadding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.section-alternative-background {
+  background-color: $secondary-bg-fill;
+}
+
+.section.doings {
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
+  padding-top: 0;
 }
