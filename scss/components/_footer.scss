@@ -4,9 +4,24 @@
   background-color: $underlay-bg-color;
 }
 
+.footer-wrapper {
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .footer-address {
   text-align: center;
   // width: 231px;
+
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
 }
 
 .footer__follow {
@@ -31,6 +46,14 @@
   border-radius: 4px;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
+
+  @media screen and(min-width: $tablet) {
+    width: 450px;
+  }
+
+  @media screen and(min-width: $pc) {
+    width: 358px;
+  }
 }
 
 .footer__follow-title {
@@ -51,6 +74,12 @@
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: 60px;
+
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .logo__footer {
@@ -92,4 +121,19 @@
 .footer__socials-link:hover,
 .footer__socials-link:focus {
   background-color: $accent-color;
+}
+
+.footer__button {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.footer__button-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 15px;
+  fill: $white-color;
 }
