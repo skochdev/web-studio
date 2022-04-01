@@ -12,12 +12,14 @@ function onModalOpen() {
   refs.closeModal.addEventListener('click', onModalClose);
   refs.modalFormRef.addEventListener('submit', onSubmit);
   refs.modalBackdrop.classList.remove('is-hidden');
+  document.body.style.overflow = 'hidden';
 }
 
 function onModalClose() {
   refs.closeModal.removeEventListener('click', onModalClose);
   refs.modalFormRef.removeEventListener('submit', onSubmit);
   refs.modalBackdrop.classList.add('is-hidden');
+  document.body.style.overflow = 'auto';
 }
 
 function onBackdropClick(e) {
