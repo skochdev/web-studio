@@ -132,7 +132,13 @@
     margin-right: 8px;
   }
 
-  @media screen and(min-width: 320px) and (max-width: 767px) {
+  @media screen and(min-width: 320px) and (max-width: 322px) {
+    &:nth-child(-n + 4) {
+      margin-bottom: 8px;
+    }
+  }
+
+  @media screen and(min-width: 323px) and (max-width: 767px) {
     &:nth-child(1) {
       margin-bottom: 8px;
     }
