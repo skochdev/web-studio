@@ -8,6 +8,8 @@
   @media screen and(min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }
 
@@ -19,8 +21,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex-grow: 1;
-    justify-content: space-between;
   }
 }
 
@@ -104,9 +104,10 @@
 }
 
 .made-by {
+  display: block;
   font-size: 12px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .footer-socials__icon {
@@ -124,11 +125,13 @@
 }
 
 .footer__button {
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   border-radius: 4px;
-  margin-bottom: 15px;
+  margin-bottom: 60px;
 }
 
 .footer__button-icon {

@@ -1,5 +1,6 @@
 .mobile-menu {
-  position: absolute;
+  position: fixed;
+  overflow-y: scroll;
   padding-top: 40px;
   padding-bottom: 100px;
   padding-left: 40px;
@@ -29,6 +30,7 @@
 }
 
 .mobile-menu__nav {
+  width: 50%;
   text-align: start;
   font-weight: $fw-medium;
   font-size: 30px;
