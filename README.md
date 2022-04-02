@@ -1,1 +1,5 @@
-# Decided to redo our html+css student project. Spaced repetition, kind of :)
+# Final project of the HTML and CSS module.
+
+Adaptive website.
+
+![Tux, the Linux mascot](./webstudio-01.png)
