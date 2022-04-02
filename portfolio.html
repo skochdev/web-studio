@@ -21,58 +21,133 @@
   </head>
   <body>
     <header class="header">
-      <div class="page-container header-wrapper">
-        <nav class="main-nav">
-          <a class="logo-header" href="./index.html"
-            ><span class="logo-header__accent">Web</span>Studio
-          </a>
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Studio</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link current" href="./portfolio.html"
-                >Portfolio</a
+      <div class="container">
+        <div class="header__wrapper">
+          <nav class="main-nav">
+            <a class="logo logo__header" href="./index.html"
+              ><span class="logo--accent">Web</span>Studio
+            </a>
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link current" href="./index.html">Studio</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./contacts.html">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="main-nav__contacts">
+            <li class="main-nav__contacts-item">
+              <a
+                class="main-nav__contacts-link"
+                href="mailto:info@devstudio.com"
+              >
+                <svg
+                  class="contacts-icon contacts-icon__envelope"
+                  width="16"
+                  height="12"
+                >
+                  <use href="./images/icons/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./contacts.html">Contacts</a>
+            <li class="main-nav__contacts-item">
+              <a class="main-nav__contacts-link" href="tel:+380961111111">
+                <svg
+                  class="contacts-icon contacts-icon__smartphone"
+                  width="10"
+                  height="16"
+                >
+                  <use href="./images/icons/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
+          <button type="button" class="mobile-menu__button" data-menu-button>
+            <svg
+              class="header__icon-burger"
+              aria-label="mobile menu toggle"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <use
+                class="icon-mobile icon-mobile__burger"
+                href="./images/icons/icons.svg#icon-mobile-burger"
+              ></use>
+              <use
+                class="icon-mobile icon-mobile__close"
+                href="./images/icons/icons.svg#icon-burger-close"
+              ></use>
+            </svg>
 
-        <ul class="main-nav__contacts">
-          <li class="main-nav__contacts-item">
-            <a class="main-nav__contacts-link" href="mailto:info@devstudio.com">
-              <svg
-                class="contacts-icon contacts-icon__envelope"
-                width="16"
-                height="12"
-              >
-                <use href="./images/icons/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="main-nav__contacts-item">
-            <a class="main-nav__contacts-link" href="tel:+380961111111">
-              <svg
-                class="contacts-icon contacts-icon__smartphone"
-                width="10"
-                height="16"
-              >
-                <use href="./images/icons/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+            <!-- * MOBILE MENU -->
+
+            <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+              <ul class="mobile-menu__nav">
+                <li class="mobile-menu__nav-item">
+                  <a class="mobile-menu__nav-link current" href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mobile-menu__nav-item">
+                  <a class="mobile-menu__nav-link" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mobile-menu__nav-item">
+                  <a class="mobile-menu__nav-link" href="./contacts.html"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="mobile-menu__contacts">
+                <li class="mobile-menu__contacts-item">
+                  <a
+                    class="mobile-menu__contacts-link"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="mobile-menu__contacts-item">
+                  <a
+                    class="mobile-menu__contacts-link"
+                    href="tel:+380961111111"
+                  >
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-menu__socials-list">
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link">Instagram</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link">Facebook</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link">LinkedIn</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a href="" class="mobile-menu__socials-link">Twitter</a>
+                </li>
+              </ul>
+            </div>
+          </button>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="section portfolio-section">
-        <div class="page-container">
+        <div class="container">
           <h1 class="hero-heading visually-hidden">Portfolio</h1>
           <ul class="portfolio-filter">
             <li class="portfolio-filter__item">
@@ -106,14 +181,36 @@
             <li class="portfolio-item">
               <a class="portfolio-item__card" title="website" href="">
                 <div class="portfolio-item__thumb">
-                  <img
-                    class="portfolio-card_img"
-                    src="./images/portfolio-images/portfolio-01.jpg"
-                    alt="Laptop with a website on the screen"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/works-1-desktop.jpg 1x,
+                        ./images/works/works-1-desktop.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-1-tablet.jpg 1x,
+                        ./images/works/works-1-tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-1.jpg    1x,
+                        ./images/works/works-1@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card_img"
+                      src="./images/works/works-1.jpg"
+                      alt="Laptop with a website on the screen"
+                      width="370"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Modi fugiat sed voluptatem, nobis tempora veritatis
@@ -132,14 +229,36 @@
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="design">
                 <div class="portfolio-item__thumb">
-                  <img
-                    class="portfolio-card_img"
-                    src="./images/portfolio-images/portfolio-02.jpg"
-                    alt="Two basketball players ingame"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/works-2-desktop.jpg 1x,
+                        ./images/works/works-2-desktop.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-2-tablet.jpg 1x,
+                        ./images/works/works-2-tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-2.jpg    1x,
+                        ./images/works/works-2@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card_img"
+                      src="./images/works/works-2.jpg"
+                      alt="Two basketball players ingame"
+                      width="370"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Modi fugiat sed voluptatem, nobis tempora veritatis
@@ -159,14 +278,36 @@
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="app">
                 <div class="portfolio-item__thumb">
-                  <img
-                    class="portfolio-card_img"
-                    src="./images/portfolio-images/portfolio-03.jpg"
-                    alt="Logotype with a fish and lettering"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/works-3-desktop.jpg 1x,
+                        ./images/works/works-3-desktop.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-3-tablet.jpg 1x,
+                        ./images/works/works-3-tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-3.jpg    1x,
+                        ./images/works/works-3@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card_img"
+                      src="./images/works/works-3.jpg"
+                      alt="Logotype with a fish and lettering"
+                      width="370"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Modi fugiat sed voluptatem, nobis tempora veritatis
@@ -186,14 +327,36 @@
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="marketing">
                 <div class="portfolio-item__thumb">
-                  <img
-                    class="portfolio-card_img"
-                    src="./images/portfolio-images/portfolio-04.jpg"
-                    alt="Headphones on white background"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/works-4-desktop.jpg 1x,
+                        ./images/works/works-4-desktop.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-4-tablet.jpg 1x,
+                        ./images/works/works-4-tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-4.jpg    1x,
+                        ./images/works/works-4@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card_img"
+                      src="./images/works/works-4.jpg"
+                      alt="Headphones on white background"
+                      width="370"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Modi fugiat sed voluptatem, nobis tempora veritatis
@@ -213,14 +376,36 @@
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="app">
                 <div class="portfolio-item__thumb">
-                  <img
-                    class="portfolio-card_img"
-                    src="./images/portfolio-images/portfolio-05.jpg"
-                    alt="Packaging with branded design"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/works-5-desktop.jpg 1x,
+                        ./images/works/works-5-desktop.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-5-tablet.jpg 1x,
+                        ./images/works/works-5-tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-5.jpg    1x,
+                        ./images/works/works-5@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card_img"
+                      src="./images/works/works-5.jpg"
+                      alt="Packaging with branded design"
+                      width="370"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Modi fugiat sed voluptatem, nobis tempora veritatis
@@ -240,14 +425,36 @@
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="website">
                 <div class="portfolio-item__thumb">
-                  <img
-                    class="portfolio-card_img"
-                    src="./images/portfolio-images/portfolio-06.jpg"
-                    alt="Desktop monitor with an open website"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/works-6-desktop.jpg 1x,
+                        ./images/works/works-6-desktop.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-6-tablet.jpg 1x,
+                        ./images/works/works-6-tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-6.jpg    1x,
+                        ./images/works/works-6@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card_img"
+                      src="./images/works/works-6.jpg"
+                      alt="Desktop monitor with an open websit"
+                      width="370"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Modi fugiat sed voluptatem, nobis tempora veritatis
@@ -269,14 +476,36 @@
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="design">
                 <div class="portfolio-item__thumb">
-                  <img
-                    class="portfolio-card_img"
-                    src="./images/portfolio-images/portfolio-07.jpg"
-                    alt="Printed magazine"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/works-7-desktop.jpg 1x,
+                        ./images/works/works-7-desktop.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-7-tablet.jpg 1x,
+                        ./images/works/works-7-tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-7.jpg    1x,
+                        ./images/works/works-7@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card_img"
+                      src="./images/works/works-7.jpg"
+                      alt="Printed magazine"
+                      width="370"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Modi fugiat sed voluptatem, nobis tempora veritatis
@@ -296,14 +525,36 @@
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="marketing">
                 <div class="portfolio-item__thumb">
-                  <img
-                    class="portfolio-card_img"
-                    src="./images/portfolio-images/portfolio-08.jpg"
-                    alt="Cloth tag with the brand name"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/works-8-desktop.jpg 1x,
+                        ./images/works/works-8-desktop.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-8-tablet.jpg 1x,
+                        ./images/works/works-8-tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-8.jpg    1x,
+                        ./images/works/works-8@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card_img"
+                      src="./images/works/works-8.jpg"
+                      alt="Cloth tag with the brand name"
+                      width="370"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Modi fugiat sed voluptatem, nobis tempora veritatis
@@ -323,14 +574,36 @@
             <li class="portfolio-item">
               <a class="portfolio-item__card" href="" title="app">
                 <div class="portfolio-item__thumb">
-                  <img
-                    class="portfolio-card_img"
-                    src="./images/portfolio-images/portfolio-09.jpg"
-                    alt="Laptop with an open website page"
-                    width="370"
-                    height="294"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/works-9-desktop.jpg 1x,
+                        ./images/works/works-9-desktop.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-9-tablet.jpg 1x,
+                        ./images/works/works-9-tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-9.jpg    1x,
+                        ./images/works/works-9@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio-card_img"
+                      src="./images/works/works-9.jpg"
+                      alt="Laptop with an open website page"
+                      width="370"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio-card__overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Modi fugiat sed voluptatem, nobis tempora veritatis
@@ -351,83 +624,105 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="page-container footer-wrapper">
-        <div class="footer-address">
-          <a class="logo-footer" href="./index.html">
-            <span class="logo-footer__accent">Web</span>Studio
-          </a>
-          <address class="address">
-            <p class="address__street">Kyiv, Drushby Narodiv street, 25</p>
-            <ul class="footer-contacts">
-              <li class="footer-contacts__item">
-                <a class="footer-contacts__link" href="mailto:info@example.com"
-                  >info@example.com</a
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-address">
+            <a class="logo logo__footer" href="./index.html">
+              <span class="logo--accent">Web</span>Studio
+            </a>
+            <address class="address">
+              <p class="address__street">Kyiv, Drushby Narodiv street, 25</p>
+              <ul class="footer-contacts">
+                <li class="footer-contacts__item">
+                  <a
+                    class="footer-contacts__link"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+
+                <li class="footer-contacts__item">
+                  <a class="footer-contacts__link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__follow">
+            <strong class="footer__follow-title">Follow Us</strong>
+            <ul class="socials footer-socials">
+              <li class="socials__item footer-socials__item">
+                <a
+                  class="socials__link footer__socials-link"
+                  aria-label="Instagram"
+                  href=""
                 >
+                  <svg class="socials__icon footer-socials__icon">
+                    <use href="./images/icons/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
 
-              <li class="footer-contacts__item">
-                <a class="footer-contacts__link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
+              <li class="socials__item footer-socials__item">
+                <a
+                  class="socials__link footer__socials-link"
+                  aria-label="Twitter"
+                  href=""
                 >
+                  <svg class="socials__icon footer-socials__icon">
+                    <use href="./images/icons/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="socials__item footer-socials__item">
+                <a
+                  class="socials__link footer__socials-link"
+                  aria-label="Facebook"
+                  href=""
+                >
+                  <svg class="socials__icon footer-socials__icon">
+                    <use href="./images/icons/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="socials__item footer-socials__item">
+                <a
+                  class="socials__link footer__socials-link"
+                  aria-label="LinkedIn"
+                  href=""
+                >
+                  <svg class="socials__icon footer-socials__icon">
+                    <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
+
+          <div class="footer__subscribe">
+            <strong class="subsribe-form footer__follow-title">
+              Subscribe to our newsletter
+            </strong>
+            <input
+              class="subsribe-form__input"
+              type="email"
+              placeholder="Email"
+            />
+            <button type="submit" class="button footer__button">
+              Subscribe
+              <svg class="footer__button-icon">
+                <use href="./images/icons/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="footer__follow">
-          <strong class="footer__follow-title">Follow Us</strong>
-          <ul class="socials footer-socials">
-            <li class="socials__item footer-socials__item">
-              <a
-                class="socials__link footer__socials-link"
-                aria-label="Instagram"
-                href=""
-              >
-                <svg class="socials__icon footer-socials__icon">
-                  <use href="./images/icons/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="socials__item footer-socials__item">
-              <a
-                class="socials__link footer__socials-link"
-                aria-label="Twitter"
-                href=""
-              >
-                <svg class="socials__icon footer-socials__icon">
-                  <use href="./images/icons/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="socials__item footer-socials__item">
-              <a
-                class="socials__link footer__socials-link"
-                aria-label="Facebook"
-                href=""
-              >
-                <svg class="socials__icon footer-socials__icon">
-                  <use href="./images/icons/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="socials__item footer-socials__item">
-              <a
-                class="socials__link footer__socials-link"
-                aria-label="LinkedIn"
-                href=""
-              >
-                <svg class="socials__icon footer-socials__icon">
-                  <use href="./images/icons/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <p class="made-by">Bohdan Skochii, GoIT Full Stack Course</p>
       </div>
-
-      <p class="made-by">Bohdan Skochii, GoIT Full Stack Course</p>
     </footer>
+    <script src="./js/menu-modal.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 </html>
