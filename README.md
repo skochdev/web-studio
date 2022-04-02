@@ -8,9 +8,12 @@ Semantic HTML markdown. Accessibillity.
 Code style CSS. Classes, pseudo-classes, selectors, fonts, colors text
 pseudo-elements, box-model, structural pseudo-classes
 
-Flexbox, containers, elements geometry Decorative effects and elements. Pseudo
-elements, gradients, images, vector graphics SCG elements, icons, working with
-vector sprites. Optimization of icons and images
+Flexbox, containers, elements geometry Decorative effects and elements.
+
+Pseudoelements, gradients, images, vector graphics
+
+SVG elements, icons, working with vector sprites. Optimization of icons and
+images
 
 Positioned elements, z-index transitions, animation Forms elements, form
 validation
