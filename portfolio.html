@@ -29,10 +29,12 @@
             </a>
             <ul class="site-nav">
               <li class="site-nav__item">
-                <a class="site-nav__link current" href="./index.html">Studio</a>
+                <a class="site-nav__link" href="./index.html">Studio</a>
               </li>
               <li class="site-nav__item">
-                <a class="site-nav__link" href="./portfolio.html">Portfolio</a>
+                <a class="site-nav__link current" href="./portfolio.html"
+                  >Portfolio</a
+                >
               </li>
               <li class="site-nav__item">
                 <a class="site-nav__link" href="./contacts.html">Contacts</a>
@@ -706,17 +708,19 @@
             <strong class="subsribe-form footer__follow-title">
               Subscribe to our newsletter
             </strong>
-            <input
-              class="subsribe-form__input"
-              type="email"
-              placeholder="Email"
-            />
-            <button type="submit" class="button footer__button">
-              Subscribe
-              <svg class="footer__button-icon">
-                <use href="./images/icons/icons.svg#icon-telegram"></use>
-              </svg>
-            </button>
+            <div class="footer__subscription-wrapper">
+              <input
+                class="subsribe-form__input"
+                type="email"
+                placeholder="Email"
+              />
+              <button type="submit" class="button footer__button">
+                Subscribe
+                <svg class="footer__button-icon">
+                  <use href="./images/icons/icons.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
         <p class="made-by">Bohdan Skochii, GoIT Full Stack Course</p>
