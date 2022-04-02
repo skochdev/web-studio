@@ -17,6 +17,7 @@
   background-color: $secondary-bg-fill;
   transform: translateX(-150%);
   transition: $transform-transition;
+  z-index: 2;
 
   @media screen and(min-width: $tablet) {
     display: none;

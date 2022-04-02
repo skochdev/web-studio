@@ -33,7 +33,6 @@
 }
 
 .portfolio-item {
-  margin: 15px;
   max-width: 450px;
 
   border-left: 1px solid #eeeeee;
@@ -42,10 +41,17 @@
 
   @media screen and(min-width: $tablet) {
     width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 
   @media screen and(min-width: $pc) {
     width: calc((100% - 3 * 30px) / 3);
+  }
+}
+
+.portfolio-item + .portfolio-item {
+  @media screen and(max-width: 767px) {
+    margin-top: 30px;
   }
 }
 
