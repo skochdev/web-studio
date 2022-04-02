@@ -1,15 +1,23 @@
 # Final project of the HTML and CSS module
 
-> This is the result of 8 modules, 16 week HTML + CSS course. From basic
-> knowledge to the full fledged professional looking website Semantic HTML
-> markdown. Accessibillity. Code style CSS. Classes, pseudo-classes, selectors,
-> fonts, colors text pseudo-elements, box-model, structural pseudo-classes
-> Flexbox, containers, elements geometry Decorative effects and elements. Pseudo
-> elements, gradients, images, vector graphics SCG elements, icons, working with
-> vector sprites. Optimization of icons and images Positioned elements, z-index,
-> transitions, animation Forms elements, form validation BEM methodology, SASS
-> pre-processor Adaptive and responsive layout and graphics Modal windows,
-> mobile menus, basic Javascript
+This is the result of 8 modules, 16 week HTML + CSS course. From basic knowledge
+to the full fledged professional looking website
+
+Semantic HTML markdown. Accessibillity.
+
+Code style CSS. Classes, pseudo-classes, selectors, fonts, colors text
+pseudo-elements, box-model, structural pseudo-classes
+
+Flexbox, containers, elements geometry Decorative effects and elements. Pseudo
+elements, gradients, images, vector graphics SCG elements, icons, working with
+vector sprites. Optimization of icons and images
+
+Positioned elements, z-index transitions, animation Forms elements, form
+validation
+
+BEM methodology, SASS pre-processor Adaptive and responsive layout and graphics
+
+Modal windows mobile menus, basic Javascript
 
 ![WebStudio HTML + CSS final project. Presentation](./presentation/webstudio-01.jpg)
 
