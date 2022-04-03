@@ -25,7 +25,7 @@ BEM methodology, SASS pre-processor
 
 Adaptive and responsive layout and graphics
 
-Modal windows mobile menus, basic Javascript
+Modal windows, mobile menus, basic Javascript
 
 ![WebStudio HTML + CSS final project. Presentation](./presentation/desktop-index.jpg)
 
