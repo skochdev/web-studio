@@ -5,7 +5,7 @@ to the full fledged professional looking website
 
 Semantic HTML markdown. Accessibillity.
 
-CSS. Classes, pseudo-classes, selectors, fonts, colors text pseudo-elements,
+CSS. Classes, pseudo-classes, selectors, fonts, colors, text pseudo-elements,
 box-model, structural pseudo-classes
 
 Flexbox, containers, elements geometry
@@ -17,7 +17,7 @@ Pseudoelements, gradients, images, vector graphics
 SVG elements, icons, working with vector sprites. Optimization of icons and
 images
 
-Positioned elements, z-index transitions, animation
+Positioned elements, z-index,transitions, animation
 
 Forms elements, form validation
 
